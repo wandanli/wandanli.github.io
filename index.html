@@ -63,24 +63,30 @@
             margin-top: 0px;
             margin-bottom: 6px;
         }
+
+
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="z-depth-0">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Wandan Li</a>
-                <!-- <a href="#" class="brand-logo">Wandan Li</a> -->
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Reference</a></li>
-                </ul>
-            </div>
-        </nav>
+    
+    
+  <div class="navbar-fixed" style="height: 60px;">
+                <nav class="z-depth-0">
+                    <div class="nav-wrapper container">
+                        <a href="#" class="brand-logo">Wandan Li</a>
+                        <!-- <a href="#" class="brand-logo">Wandan Li</a> -->
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Experience</a></li>
+                            <li><a href="#">Reference</a></li>
+                        </ul>
+                    </div>
+                </nav>
+  </div>
+ 
 
         <ul class="sidenav" id="mobile-demo">
             <li><a href="#">Education</a></li>
@@ -88,7 +94,7 @@
             <li><a href="#">Experience</a></li>
             <li><a href="#">Reference</a></li>
         </ul>
-
+        <div class="container">
         <div class="row">
             <div class="flexbox">
                 <div class="col s12 l3 push-l9">
@@ -115,10 +121,19 @@
 
         </div>
         <div>
-            <img src="undraw_remotely_2j6y.svg" alt="" style="width: 80%;">
+            <img src="undraw_remotely_2j6y.svg" alt="" style="width: 90%;">
         </div>
     </div>
+    <div>
+        <svg _ngcontent-xhh-c43="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34"
+            preserveAspectRatio="none" fill="#E6E6E6">
+            <path _ngcontent-xhh-c43="" d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0">
+            </path>
+        </svg>
+        <div>
 
+        </div>
+    </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -126,6 +141,15 @@
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems);
         });
+
+    window.addEventListener('scroll', (e) => {
+        const nav = document.querySelector('nav');
+        if (window.pageYOffset > 0) {
+            nav.classList.remove("z-depth-0");
+        } else {
+            nav.classList.add("z-depth-0");
+        }
+    });
     </script>
 </body>
 
