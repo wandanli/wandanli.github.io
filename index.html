@@ -108,9 +108,29 @@
                 float: none !important;
                 display: block;
             }
+
+            .floating {
+                display: none;
+            }
+        }
+
+        .floating {
+            position: sticky;
+            bottom: 50px;
+            right: 20px;
+            float: right;
+        }
+
+        #qrCode {
+            width: 80px;
+        }
+
+        .floating a {
+            display: block;
+            width: 80px;
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -284,8 +304,14 @@
             </div>
         </div>
     </div>
+    <!--QR Code-->
+    <div class="floating">
+        <img id="qrCode" style="display: none;" src="/photo/qrcode.png" alt="">
+        <a class="btn-small waves-effect waves-light red" onclick="displayQRCode()">Scan</a>
+    </div>
     <!--Footer-->
     <footer style="background-color: #EfEfEf">
+       
         <div class="footer-copyright">
             <div class="container" style="border-top: 1px solid #dbdada; padding: 30px 0; color: #b6b6b6;">
                 <a style="color: #b6b6b6;">© 2020 Designed by Wandan Li (Danica)</a>
@@ -293,9 +319,10 @@
                     Materialize</a>
             </div>
         </div>
+        
     </footer>
 
-
+    
 
 
     <!-- Compiled and minified JavaScript -->
@@ -323,6 +350,16 @@
             }
             var instances = M.Carousel.init(elems);
         });
+        // QR Code
+        function displayQRCode(){
+            if(document.getElementById("qrCode").style.display == "none"){
+                document.getElementById("qrCode").style.display = "initial"
+            }
+            else{
+                document.getElementById("qrCode").style.display = "none"
+            }
+        }
+
 
     </script>
 </body>
