@@ -22,6 +22,10 @@
             font-family: 'Assistant';
         }
 
+        h2, h4, p {
+            color: #3E4450;
+        }
+
         nav .brand-logo {
             font-family: 'Megrim';
             font-weight: bolder;
@@ -64,42 +68,57 @@
             margin-bottom: 6px;
         }
 
+        .skill, .contact {
+            background-color: #EfEfEf;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
 
+        .skill img {
+            width: 100%;
+        }
+
+        .carousel {
+            height: 800px;
+        }
+
+        .carousel-item {
+            width:400px !important;
+            margin-top: -280px;
+        }
     </style>
 </head>
 
 <body>
-    
-    
-  <div class="navbar-fixed" style="height: 60px;">
-                <nav class="z-depth-0">
-                    <div class="nav-wrapper container">
-                        <a href="#" class="brand-logo">Wandan Li</a>
-                        <!-- <a href="#" class="brand-logo">Wandan Li</a> -->
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#">Education</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Experience</a></li>
-                            <li><a href="#">Reference</a></li>
-                        </ul>
-                    </div>
-                </nav>
-  </div>
- 
-
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Reference</a></li>
-        </ul>
-        <div class="container">
+    <!--Navbar-->
+    <div class="navbar-fixed" style="height: 60px;">
+        <nav class="z-depth-0">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Wandan Li</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Reference</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Sidenav-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Reference</a></li>
+    </ul>
+    <!--Personal Statement-->
+    <div class="container">
         <div class="row">
             <div class="flexbox">
                 <div class="col s12 l3 push-l9">
                     <h2>Hello,</h2>
-                    <h2>I AM Danica</h2>
+                    <h2>I am Danica</h2>
                 </div>
                 <div class="col s12 l9 pull-l3">
                     <p>
@@ -117,39 +136,133 @@
                     </p>
                 </div>
             </div>
-
-
         </div>
         <div>
-            <img src="undraw_remotely_2j6y.svg" alt="" style="width: 90%;">
+            <img src="/svg/undraw_remotely_2j6y.svg" alt="" style="width: 90%;">
         </div>
     </div>
+    <!--Skill Set-->
     <div>
-        <svg _ngcontent-xhh-c43="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34"
-            preserveAspectRatio="none" fill="#E6E6E6">
-            <path _ngcontent-xhh-c43="" d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0">
-            </path>
-        </svg>
         <div>
-
+            <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+        </div>
+        <div class="skill">
+            <div class="container center-align">
+                <div>
+                    <h4>Skill Set</h4>
+                </div>
+                <div class="row" style="margin-bottom: 0px;">
+                    <div class="col s2 offset-s1 l1 offset-l1">
+                        <img src="/icons-skill-set/icons8-html-5-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-css3-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-bootstrap-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-git-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-javascript-100.png" alt="">
+                    </div>
+                    <div class="col s2 offset-s1 l1">
+                        <img src="/icons-skill-set/icons8-django-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-python-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-adobe-photoshop-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-adobe-xd-100.png" alt="">
+                    </div>
+                    <div class="col s2 l1">
+                        <img src="/icons-skill-set/icons8-android-os-100.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="font-size: 0px;">
+            <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
         </div>
     </div>
+    <!--Interest-->
+    <div>
+        <div class="container center-align" style="margin-top: 80px;">
+            <h4>Interest</h4>
+            <p>Still-life Photography</p>
+        </div>
+        <div class="carousel">
+            <a class="carousel-item"><img src="photo/figure-photo.jpg" width="400px"></a>
+            <a class="carousel-item" href="#four!"><img src="photo/siyue.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="photo/sanriyue.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="photo/miku.jpg"></a>
+            <a class="carousel-item"><img src="photo/nidemingzi.jpg"></a>
+        </div>
+        <div class="container center-align" style="margin-top: -340px; display: flex; align-items: center;justify-content: center;">
+                <a class="waves-effect waves-light btn z-depth-0"
+                    style="display: flex; justify-content: center; align-items: center; background-color: #3A9EFF; border-radius: 6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 226 226"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,226v-226h226v226z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M65.59976,0c-36.1274,0 -65.59976,29.47236 -65.59976,65.59976v94.80048c0,36.1274 29.47236,65.59976 65.59976,65.59976h94.80048c36.1274,0 65.59976,-29.47236 65.59976,-65.59976v-94.80048c0,-36.1274 -29.47236,-65.59976 -65.59976,-65.59976zM65.59976,17.38462h94.80048c26.72206,0 48.21514,21.45913 48.21514,48.21514v94.80048c0,26.72206 -21.45913,48.21514 -48.21514,48.21514h-94.80048c-26.72206,0 -48.21514,-21.45913 -48.21514,-48.21514v-94.80048c0,-26.72206 21.45913,-48.21514 48.21514,-48.21514zM178.19231,34.76923c-7.19832,0 -13.03846,5.84014 -13.03846,13.03846c0,7.19832 5.84014,13.03846 13.03846,13.03846c7.19832,0 13.03846,-5.84014 13.03846,-13.03846c0,-7.19832 -5.84014,-13.03846 -13.03846,-13.03846zM113,52.15385c-33.51292,0 -60.84615,27.33323 -60.84615,60.84615c0,33.51292 27.33323,60.84615 60.84615,60.84615c33.51292,0 60.84615,-27.33323 60.84615,-60.84615c0,-33.51292 -27.33323,-60.84615 -60.84615,-60.84615zM113,69.53846c24.10758,0 43.46154,19.35397 43.46154,43.46154c0,24.10758 -19.35396,43.46154 -43.46154,43.46154c-24.10757,0 -43.46154,-19.35396 -43.46154,-43.46154c0,-24.10757 19.35397,-43.46154 43.46154,-43.46154z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span style="padding-left: 10px;">My Instagram >>></span>
+                </a>
+        </div>
+    </div>
+    <!--Contact Me-->
+    <div>
+        <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+    </div>
+    <div class="contact">
+        <div class="container center-align">
+            <h4>Contact Me</h4>
+            <p>I sincerely look forward to your contact.</p>
+        </div>
+    </div>
+
+
+
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
+        // Sidenav
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems);
+            });
+            // Navbar shadow change
+            window.addEventListener('scroll', (e) => {
+                const nav = document.querySelector('nav');
+                if (window.pageYOffset > 0) {
+                    nav.classList.remove("z-depth-0");
+                } else {
+                    nav.classList.add("z-depth-0");
+                }
+            });
+            // Carousel
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.carousel');
+                    var options = {
+                        dist: 0,
+                    }
+                    var instances = M.Carousel.init(elems);
+                });
 
-    window.addEventListener('scroll', (e) => {
-        const nav = document.querySelector('nav');
-        if (window.pageYOffset > 0) {
-            nav.classList.remove("z-depth-0");
-        } else {
-            nav.classList.add("z-depth-0");
-        }
-    });
     </script>
 </body>
 
