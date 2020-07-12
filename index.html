@@ -26,6 +26,10 @@
             color: #3E4450;
         }
 
+        h4 {
+            padding: 16px;
+        }
+
         nav .brand-logo {
             font-family: 'Megrim';
             font-weight: bolder;
@@ -78,13 +82,9 @@
             width: 100%;
         }
 
-        .carousel {
-            height: 800px;
-        }
-
         .carousel-item {
             width:400px !important;
-            margin-top: -280px;
+            height: 400px !important;
         }
     </style>
 </head>
@@ -117,8 +117,7 @@
         <div class="row">
             <div class="flexbox">
                 <div class="col s12 l3 push-l9">
-                    <h2>Hello,</h2>
-                    <h2>I am Danica</h2>
+                    <h2>Hello,</h2><h2>I am Danica</h2>
                 </div>
                 <div class="col s12 l9 pull-l3">
                     <p>
@@ -196,13 +195,13 @@
             <p>Still-life Photography</p>
         </div>
         <div class="carousel">
-            <a class="carousel-item"><img src="photo/figure-photo.jpg" width="400px"></a>
-            <a class="carousel-item" href="#four!"><img src="photo/siyue.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="photo/sanriyue.jpg"></a>
-            <a class="carousel-item" href="#five!"><img src="photo/miku.jpg"></a>
-            <a class="carousel-item"><img src="photo/nidemingzi.jpg"></a>
+            <img class="carousel-item" src="photo/figure-photo.jpg">
+            <img class="carousel-item" src="photo/siyue.jpg">
+            <img class="carousel-item" src="photo/sanriyue.jpg">
+            <img class="carousel-item" src="photo/miku.jpg">
+            <img class="carousel-item" src="photo/nidemingzi.jpg">
         </div>
-        <div class="container center-align" style="margin-top: -340px; display: flex; align-items: center;justify-content: center;">
+        <div class="container center-align" style="display: flex; align-items: center;justify-content: center; padding: 32px 0px;">
                 <a class="waves-effect waves-light btn z-depth-0"
                     style="display: flex; justify-content: center; align-items: center; background-color: #3A9EFF; border-radius: 6px;">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 226 226"
@@ -225,14 +224,49 @@
     </div>
     <!--Contact Me-->
     <div>
-        <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
-    </div>
-    <div class="contact">
-        <div class="container center-align">
-            <h4>Contact Me</h4>
-            <p>I sincerely look forward to your contact.</p>
+        <div>
+            <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+        </div>
+        <div class="contact" style="padding-bottom: 40px;">
+            <div class="container center-align">
+                <h4>Contact Me</h4>
+                <p>I sincerely look forward to your contact.</p>
+            </div>
+            <div class="container">
+                <div class="row" style="padding-top: 24px; margin-bottom: 0;">
+                    <div class="col s10 offset-s1 m5 offset-m1">
+                        <ul class="collection card-panel z-depth-0"
+                            style="border: none; border-radius: 8px; align-items: center;">
+                            <li class="collection-item avatar" style="margin-left: 16%;">
+                                <i class="material-icons circle blue lighten-1">email</i>
+                                <p>Email</p>
+                                <h6>liwandan@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s10 offset-s1 m5">
+                        <ul class="collection card-panel z-depth-0"
+                            style="border: none; border-radius: 8px; align-items: center;">
+                            <li class="collection-item avatar" style="margin-left: 16%;">
+                                <i class="material-icons circle blue lighten-1">phone_iphone</i>
+                                <p>Phone</p>
+                                <h6>027-387-9130</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!--Footer-->
+    <footer style="background-color: #EfEfEf">
+        <div class="footer-copyright">
+            <div class="container" style="border-top: 1px solid #dbdada; padding: 30px 0; color: #b6b6b6;">
+            © 2020 Designed by Wandan Li (Danica)
+            <a style="color: #b6b6b6;" class="right" href="https://materializecss.com/">Used Framework: Materialize</a>
+            </div>
+          </div>
+    </footer>
 
 
 
