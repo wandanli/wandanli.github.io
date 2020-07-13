@@ -32,6 +32,11 @@
             padding: 16px;
         }
 
+        h6 {
+            color: #3A9EFF;
+            font-weight: bolder;
+        }
+
         nav .brand-logo {
             font-family: 'Megrim';
             font-weight: bolder;
@@ -95,6 +100,37 @@
             height: 400px !important;
         }
 
+        .education-box {
+            background-color: #efefef;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .collection-header p {
+            text-align: right;
+            /* font-weight: bolder; */
+            font-size: 1.1rem;
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+        }
+
+        #edu-detail-btn {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            border-radius: 0 0 0 100%;
+            display: block;
+            width: 40px;
+            height: 38px;
+            padding-bottom: 2px;
+            font-size: 1.2rem;
+        }
+
+        #edu-detail-btn:hover {
+            background-color: #ff80ab !important;
+        }
+
         @media screen and (max-width: 500px) {
             .avatar {
                 margin-left: 4% !important;
@@ -116,6 +152,17 @@
 
             .floating {
                 display: none;
+            }
+
+            .education-box img {
+                width: 80% !important;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            .collection-header p {
+                text-align: left;
+                position: initial;
             }
         }
 
@@ -146,18 +193,20 @@
                 <a href="/index.html" class="brand-logo">Wandan Li</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="/education.html">Education</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/experience.html">Experience</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Experience</a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <!--Sidenav-->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="/education.html">Education</a></li>
-        <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/experience.html">Experience</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Experience</a></li>
     </ul>
     <!--Personal Statement-->
     <div class="container">
@@ -271,6 +320,123 @@
             </a>
         </div>
     </div>
+
+    <!--Education-->
+    <div>
+        <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+    </div>
+    <div class="education-box">
+        <div class="container center-align" style="margin-bottom: 40px;">
+            <h4>Education</h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <img src="/svg/undraw_studying_s3l7.png" alt="" style="width: 130%; display: block;">
+                </div>
+                <div class="col s12 m8">
+                    <ul class="collection with-header z-depth-3">
+
+                        <li class="collection-header">
+                            <div class="row" style="position: relative; margin-bottom: 10px;">
+                                <div class="col s12 m8">
+                                    <h5>Unitec Institute of Technology</h5>
+                                    <h6>Diploma in Computing</h6>
+                                </div>
+                                <div class="col s12 m4">
+                                    <p>07/2019 - 06/2020</p>
+                                </div>
+
+                                <a id="edu-detail-btn"
+                                    class="waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                    onclick="displayEduDetail()">...</a>
+
+                            </div>
+                        </li>
+                        <div id="edu-detail" style="display: none;">
+                            <li class="collection-item">
+                                <div>• Internet and Website Development (HTML/CSS/JavaScript/JQuery)
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A+"></span></a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>• Web Application Development (Django/Heroku/REST/React/Docker)
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A++"></span></a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>• Cloud Application Design & Development (AWS)
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A"></span></a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>• Mobile Software Development (Android/Java)
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A++"></span></a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>• GUI Programming (C#/Windows Form)
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A"></span></a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>• Information Systems & Analysis
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A"></span></a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>• Testing/Quality Assurance ICT
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A+"></span></a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>• Agile & Lean Software Delivery (YouTrack)
+                                    <a class="secondary-content"><span class="new badge blue lighten-1"
+                                            data-badge-caption="A"></span></a>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="collection-header" style="background-color: #f8f8f8;">
+                            <div class="row" style="position: relative; margin-bottom: 10px;">
+                                <div class="col s12 m8">
+                                    <h5>Sun Yat-sen University</h5>
+                                    <h6>Master of Economics, Majored in Western Economy</h6>
+                                </div>
+                                <di class="col s12 m4">
+                                    <p>09/2009 – 07/2011</p>
+                                </di class="col s12 m4" v>
+                            </div>
+                        </li>
+                        <li class="collection-header" style="background-color: #f8f8f8;">
+                            <div class="row" style="position: relative; margin-bottom: 10px;">
+                                <div class="col s12 m8">
+                                    <h5>Huazhong University of Science and Technology</h5>
+                                    <h6>Bachelor of Economics, Majored in Statistics</h6>
+                                </div>
+                                <di class="col s12 m4">
+                                    <p>09/2005 – 07/2009</p>
+                                </di class="col s12 m4" v>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div style="font-size: 0px;">
+        <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
+    </div>
+
+
     <!--Contact Me-->
     <div>
         <div>
@@ -314,7 +480,7 @@
     </div>
     <!--Footer-->
     <footer style="background-color: #EfEfEf">
-       
+
         <div class="footer-copyright">
             <div class="container" style="border-top: 1px solid #dbdada; padding: 30px 0; color: #b6b6b6;">
                 <a style="color: #b6b6b6;">© 2020 Designed by Wandan Li (Danica)</a>
@@ -322,10 +488,10 @@
                     Materialize</a>
             </div>
         </div>
-        
+
     </footer>
 
-    
+
 
 
     <!-- Compiled and minified JavaScript -->
@@ -353,12 +519,21 @@
             }
             var instances = M.Carousel.init(elems);
         });
+        // Education Detail
+        function displayEduDetail() {
+            if (document.getElementById("edu-detail").style.display == "none") {
+                document.getElementById("edu-detail").style.display = "initial"
+            }
+            else {
+                document.getElementById("edu-detail").style.display = "none"
+            }
+        }
         // QR Code
-        function displayQRCode(){
-            if(document.getElementById("qrCode").style.display == "none"){
+        function displayQRCode() {
+            if (document.getElementById("qrCode").style.display == "none") {
                 document.getElementById("qrCode").style.display = "initial"
             }
-            else{
+            else {
                 document.getElementById("qrCode").style.display = "none"
             }
         }
