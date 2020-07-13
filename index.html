@@ -47,6 +47,11 @@
             color: #3A9EFF;
         }
 
+        nav ul a.active {
+            background-color: rgba(0, 0, 0, 0) !important;
+            color: #3A9EFF;
+        }
+
         nav ul a {
             color: #959CAC;
             font-family: 'Assistant';
@@ -59,7 +64,7 @@
             font-family: 'Assistant';
         }
 
-        .flexbox {
+        .flexbox-personal-statement {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -68,7 +73,7 @@
             padding-right: 40px;
         }
 
-        .flexbox p {
+        .flexbox-personal-statement p {
             font-size: 18px;
             margin-top: 0px;
             margin-bottom: 6px;
@@ -122,12 +127,12 @@
         }
 
         #qrCode {
-            width: 80px;
+            width: 108px;
         }
 
         .floating a {
             display: block;
-            width: 80px;
+            width: 108px;
         }
     </style>
 
@@ -138,28 +143,26 @@
     <div class="navbar-fixed" style="height: 60px;">
         <nav class="z-depth-0">
             <div class="nav-wrapper container">
-                <a href="#" class="brand-logo">Wandan Li</a>
+                <a href="/index.html" class="brand-logo">Wandan Li</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Reference</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/experience.html">Experience</a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <!--Sidenav-->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Reference</a></li>
+        <li><a href="/education.html">Education</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/experience.html">Experience</a></li>
     </ul>
     <!--Personal Statement-->
     <div class="container">
         <div class="row">
-            <div class="flexbox">
+            <div class="flexbox-personal-statement">
                 <div class="col s12 l3 push-l9">
                     <h2>Hello,</h2>
                     <h2>I am Danica</h2>
@@ -307,7 +310,7 @@
     <!--QR Code-->
     <div class="floating">
         <img id="qrCode" style="display: none;" src="/photo/qrcode.png" alt="">
-        <a class="btn-small waves-effect waves-light red" onclick="displayQRCode()">Scan</a>
+        <a class="btn-small waves-effect waves-light deep-purple lighten-1" onclick="displayQRCode()">Scan</a>
     </div>
     <!--Footer-->
     <footer style="background-color: #EfEfEf">
