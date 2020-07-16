@@ -224,6 +224,22 @@
             position: relative;
         }
 
+        .floating {
+            position: sticky;
+            bottom: 0px;
+            right: 20px;
+            float: right;
+        }
+
+        #qrCode {
+            width: 108px;
+        }
+
+        .floating a {
+            display: block;
+            width: 108px;
+        }
+
         @media screen and (max-width: 500px) {
             .avatar {
                 margin-left: 4% !important;
@@ -278,22 +294,6 @@
                 display: none;
             }
         }
-
-        .floating {
-            position: sticky;
-            bottom: 0px;
-            right: 20px;
-            float: right;
-        }
-
-        #qrCode {
-            width: 108px;
-        }
-
-        .floating a {
-            display: block;
-            width: 108px;
-        }
     </style>
 
 </head>
@@ -347,6 +347,9 @@
                             your
                             organisation.
                         </p>
+                        <a class="btn-small waves-effect waves-light z-depth-0"
+                            style="background-color: #3A9EFF;margin-top: 20px; border-radius: 6px;" href="#projects">My
+                            Projects >>></a>
                     </div>
                 </div>
             </div>
@@ -904,7 +907,8 @@
     <!--QR Code-->
     <div class="floating">
         <img id="qrCode" style="display: none;" src="/photo/qrcode.png" alt="">
-        <a class="btn-small waves-effect waves-light deep-purple lighten-1" onclick="displayQRCode()">Scan</a>
+        <a class="btn-small waves-effect waves-light deep-purple lighten-1" onclick="displayQRCode()"
+            style="border-radius: 30px;">Scan</a>
     </div>
     <!--Footer-->
     <footer style="background-color: #EfEfEf">
