@@ -49,7 +49,7 @@
 
         nav ul a:hover {
             background-color: rgba(0, 0, 0, 0) !important;
-            color: #3A9EFF;
+            color: #7d50b1;
         }
 
         nav ul a.active {
@@ -84,11 +84,14 @@
             margin-bottom: 6px;
         }
 
-        .skill,
-        .contact {
+        .skill {
             background-color: #EfEfEf;
             margin-top: -1px;
             padding-top: 10px;
+        }
+
+        .contact {
+            padding-top: 60px;
         }
 
         .skill img {
@@ -100,10 +103,12 @@
             height: 400px !important;
         }
 
-        .education-box {
+        .education-box,
+        .experience-box {
             background-color: #efefef;
             padding-top: 10px;
             padding-bottom: 10px;
+            margin-top: -1px;
         }
 
         .collection-header p {
@@ -127,8 +132,96 @@
             font-size: 1.2rem;
         }
 
-        #edu-detail-btn:hover {
+        .collapsible li {
+            position: relative;
+        }
+
+        .exp-detail-btn {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border-radius: 0 0 0 100%;
+            display: block;
+            width: 40px;
+            height: 38px;
+            padding-bottom: 2px;
+            font-size: 1.2rem;
+        }
+
+        #edu-detail-btn:hover,
+        .exp-detail-btn:hover {
             background-color: #ff80ab !important;
+        }
+
+        .used-languages {
+            padding-top: 10px;
+            height: 30px;
+        }
+
+        .used-javascript {
+            color: #c5af04;
+        }
+
+        .used-html {
+            color: #E34C26;
+        }
+
+        .used-css {
+            color: #563D7C;
+        }
+
+        .used-python {
+            color: #3572A5;
+        }
+
+        .used-django {
+            color: #118a40;
+        }
+
+        .used-heroku {
+            color: #8329be;
+        }
+
+        .card-start {
+            border-right: 1px solid #dbdada;
+        }
+
+        .projects .row {
+            border-bottom: 1px solid #dbdada;
+        }
+
+        .projects .card-title {
+            color: #3E4450;
+        }
+
+        .project-number {
+            font-size: 2.4rem;
+        }
+
+        .collapsible-body {
+            background-color: #f3f3f3 !important;
+        }
+
+        .collapsible-header {
+            font-size: 1.2rem;
+            color: #3A9EFF;
+            border: none;
+        }
+
+        .collapsible-second-title {
+            background-color: white;
+            border-bottom: 1px solid #dbdada;
+            padding-left: 60px;
+        }
+
+        .experience-box img {
+            width: 40%;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .experience-box {
+            position: relative;
         }
 
         @media screen and (max-width: 500px) {
@@ -150,25 +243,45 @@
                 display: block;
             }
 
-            .floating {
-                display: none;
-            }
 
+
+
+        }
+
+        @media screen and (max-width: 600px) {
             .education-box img {
                 width: 80% !important;
                 margin: 0 auto;
                 margin-bottom: 20px;
             }
 
+            .experience-box img {
+                width: 80%;
+                position: initial;
+                margin: auto;
+                display: block;
+            }
+
             .collection-header p {
                 text-align: left;
                 position: initial;
+            }
+
+            .card-start,
+            .cart-end {
+                border-right: none;
+                border-bottom: 1px solid #dbdada;
+                ;
+            }
+
+            .floating {
+                display: none;
             }
         }
 
         .floating {
             position: sticky;
-            bottom: 50px;
+            bottom: 0px;
             right: 20px;
             float: right;
         }
@@ -193,90 +306,560 @@
                 <a href="/index.html" class="brand-logo">Wandan Li</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact"><i class="material-icons">alternate_email</i></a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <!--Sidenav-->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Experience</a></li>
     </ul>
-    <!--Personal Statement-->
-    <div class="container">
-        <div class="row">
-            <div class="flexbox-personal-statement">
-                <div class="col s12 l3 push-l9">
-                    <h2>Hello,</h2>
-                    <h2>I am Danica</h2>
-                </div>
-                <div class="col s12 l9 pull-l3">
-                    <p>
-                        I like the challenges and achievements of programming.
-                    </p>
-                    <p>
-                        I can’t wait to continue exploring and extending my knowledge in this field.
-                    </p>
-                    <p>
-                        I am now looking for a junior web development position.
-                    </p>
-                    <p>
-                        I believe that my dependability, attention to detail and growth mindset can bring value to your
-                        organisation.
-                    </p>
+    <!--About-->
+    <div id="about" class="scrollspy">
+        <!--Personal Statement-->
+        <div class="container">
+            <div class="row">
+                <div class="flexbox-personal-statement">
+                    <div class="col s12 l3 push-l9">
+                        <h2>Hello,</h2>
+                        <h2>I am Danica</h2>
+                    </div>
+                    <div class="col s12 l9 pull-l3">
+                        <p>
+                            I like the challenges and achievements of programming.
+                        </p>
+                        <p>
+                            I can’t wait to continue exploring and extending my knowledge in this field.
+                        </p>
+                        <p>
+                            I am now looking for a junior web development position.
+                        </p>
+                        <p>
+                            I believe that my dependability, attention to detail and growth mindset can bring value to
+                            your
+                            organisation.
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div>
+                <img src="/svg/undraw_remotely_2j6y.svg" alt="" style="width: 90%;">
+            </div>
         </div>
+        <!--Skill Set-->
         <div>
-            <img src="/svg/undraw_remotely_2j6y.svg" alt="" style="width: 90%;">
+            <div>
+                <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+            </div>
+            <div class="skill">
+                <div class="container center-align">
+                    <div>
+                        <h4>Skill Set</h4>
+                    </div>
+                    <div class="row" style="margin-bottom: 0px;">
+                        <div class="col s2 offset-s1 l1 offset-l1">
+                            <img src="/icons-skill-set/icons8-html-5-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-css3-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-bootstrap-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-git-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-javascript-100.png" alt="">
+                        </div>
+                        <div class="col s2 offset-s1 l1">
+                            <img src="/icons-skill-set/icons8-django-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-python-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-adobe-photoshop-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-adobe-xd-100.png" alt="">
+                        </div>
+                        <div class="col s2 l1">
+                            <img src="/icons-skill-set/icons8-android-os-100.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="font-size: 0px;">
+                <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
+            </div>
+        </div>
+        <!--Interest-->
+        <div>
+            <div class="container center-align" style="margin-top: 40px;">
+                <h4>Interest</h4>
+                <p>Still-life Photography</p>
+            </div>
+            <div class="carousel">
+                <img class="carousel-item" src="photo/figure-photo.jpg">
+                <img class="carousel-item" src="photo/siyue.jpg">
+                <img class="carousel-item" src="photo/sanriyue.jpg">
+                <img class="carousel-item" src="photo/miku.jpg">
+                <img class="carousel-item" src="photo/nidemingzi.jpg">
+            </div>
+            <div class="container center-align"
+                style="display: flex; align-items: center;justify-content: center; padding: 32px 0px;">
+                <a class="waves-effect waves-light btn z-depth-0"
+                    style="display: flex; justify-content: center; align-items: center; background-color: #3A9EFF; border-radius: 6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 226 226"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,226v-226h226v226z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M65.59976,0c-36.1274,0 -65.59976,29.47236 -65.59976,65.59976v94.80048c0,36.1274 29.47236,65.59976 65.59976,65.59976h94.80048c36.1274,0 65.59976,-29.47236 65.59976,-65.59976v-94.80048c0,-36.1274 -29.47236,-65.59976 -65.59976,-65.59976zM65.59976,17.38462h94.80048c26.72206,0 48.21514,21.45913 48.21514,48.21514v94.80048c0,26.72206 -21.45913,48.21514 -48.21514,48.21514h-94.80048c-26.72206,0 -48.21514,-21.45913 -48.21514,-48.21514v-94.80048c0,-26.72206 21.45913,-48.21514 48.21514,-48.21514zM178.19231,34.76923c-7.19832,0 -13.03846,5.84014 -13.03846,13.03846c0,7.19832 5.84014,13.03846 13.03846,13.03846c7.19832,0 13.03846,-5.84014 13.03846,-13.03846c0,-7.19832 -5.84014,-13.03846 -13.03846,-13.03846zM113,52.15385c-33.51292,0 -60.84615,27.33323 -60.84615,60.84615c0,33.51292 27.33323,60.84615 60.84615,60.84615c33.51292,0 60.84615,-27.33323 60.84615,-60.84615c0,-33.51292 -27.33323,-60.84615 -60.84615,-60.84615zM113,69.53846c24.10758,0 43.46154,19.35397 43.46154,43.46154c0,24.10758 -19.35396,43.46154 -43.46154,43.46154c-24.10757,0 -43.46154,-19.35396 -43.46154,-43.46154c0,-24.10757 19.35397,-43.46154 43.46154,-43.46154z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span style="padding-left: 10px;">My Instagram >>></span>
+                </a>
+            </div>
         </div>
     </div>
-    <!--Skill Set-->
+    <!--Education-->
     <div>
         <div>
             <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
         </div>
-        <div class="skill">
-            <div class="container center-align">
-                <div>
-                    <h4>Skill Set</h4>
+        <div class="education-box">
+            <div id="education" class="container center-align scrollspy" style="margin-bottom: 40px;">
+                <h4>Education</h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <img src="/svg/undraw_studying_s3l7.png" alt="" style="width: 130%; display: block;">
+                    </div>
+                    <div class="col s12 m8">
+                        <ul class="collection with-header z-depth-3">
+
+                            <li class="collection-header">
+                                <div class="row" style="position: relative; margin-bottom: 10px;">
+                                    <div class="col s12 m8">
+                                        <h5>Unitec Institute of Technology</h5>
+                                        <h6>Diploma in Computing</h6>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <p>07/2019 - 06/2020</p>
+                                    </div>
+
+                                    <a id="edu-detail-btn"
+                                        class="waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                        onclick="displayEduDetail()">...</a>
+
+                                </div>
+                            </li>
+                            <div id="edu-detail" style="display: initial;">
+                                <li class="collection-item">
+                                    <div>• Internet and Website Development (HTML/CSS/JavaScript/JQuery)
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A+"></span></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>• Web Application Development (Django/Heroku/REST/React/Docker)
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A++"></span></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>• Cloud Application Design & Development (AWS)
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A"></span></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>• Mobile Software Development (Android/Java)
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A++"></span></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>• GUI Programming (C#/Windows Form)
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A"></span></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>• Information Systems & Analysis
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A"></span></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>• Testing/Quality Assurance ICT
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A+"></span></a>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div>• Agile & Lean Software Delivery (YouTrack)
+                                        <a class="secondary-content"><span class="new badge blue lighten-1"
+                                                data-badge-caption="A"></span></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <li class="collection-header" style="background-color: #f8f8f8;">
+                                <div class="row" style="position: relative; margin-bottom: 10px;">
+                                    <div class="col s12 m8">
+                                        <h5>Sun Yat-sen University</h5>
+                                        <h6>Master of Economics, Majored in Western Economy</h6>
+                                    </div>
+                                    <di class="col s12 m4">
+                                        <p>09/2009 – 07/2011</p>
+                                    </di class="col s12 m4" v>
+                                </div>
+                            </li>
+                            <li class="collection-header" style="background-color: #f8f8f8;">
+                                <div class="row" style="position: relative; margin-bottom: 10px;">
+                                    <div class="col s12 m8">
+                                        <h5>Huazhong University of Science and Technology</h5>
+                                        <h6>Bachelor of Economics, Majored in Statistics</h6>
+                                    </div>
+                                    <di class="col s12 m4">
+                                        <p>09/2005 – 07/2009</p>
+                                    </di class="col s12 m4" v>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-                <div class="row" style="margin-bottom: 0px;">
-                    <div class="col s2 offset-s1 l1 offset-l1">
-                        <img src="/icons-skill-set/icons8-html-5-100.png" alt="">
+            </div>
+
+        </div>
+        <div style="font-size: 0px;">
+            <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
+        </div>
+    </div>
+    <!--Projects-->
+    <div id="projects" class="scrollspy" style="padding-bottom: 40px;">
+        <div class="container center-align" style="margin-top: 40px;">
+            <h4>Projects</h4>
+            <p>07/2019 - Now</p>
+        </div>
+        <div class="container projects">
+            <div class="row">
+                <div class="col s12 m6">
+                    <a href="https://wandanli.github.io/Hoa-Hari-Restaurant-Reservation/index.html">
+                        <div class="card z-depth-0 card-start">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">01. </span>Restaurant
+                                    Reservation Website</span>
+                                <p class="card-detail">An online booking system for restaurants, in which user can make
+                                    reservations for a
+                                    particular table by selecting in the
+                                    restaurant layout, and order meals in advance.</p>
+                                <div class="used-languages">
+                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-css">• CSS</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: rgb(194, 72, 16);">• OpenWeather API</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="http://www.danica-web.studio/">
+                        <div class="card z-depth-0 card-end">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">02. </span>Childcare Centre
+                                    Management Web Application</span>
+                                <p class="card-detail">An online platform for teachers to manage child enrolment and log
+                                    child daily
+                                    activities, as well as for parents to log
+                                    and view.</p>
+                                <div class="used-languages">
+                                    <span class="used-python">• Python</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-django">• Django</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #7043A5;">• Bootstrap</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-heroku">• Heroku</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: rgb(252, 122, 0);">• AWS S3</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #E1567C;">• Sentry</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #F48121;">• Cloudflare</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #8DC63F;">• Domain name</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <a href="https://danicawebapp-docker.herokuapp.com/react/kids/">
+                        <div class="card z-depth-0 card-start">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">03. </span>Single-Page Application
+                                    (SPA) Practice</span>
+                                <p class="card-detail">Used Django REST Framework to create an API backend, used React
+                                    and Material-UI to create a frontend to perform CRUD operations.</p>
+                                <div class="used-languages">
+                                    <span style="color: #A30000;">• Django REST Framework</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #61DBFB;">• React</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #1A76D2;">• Material-UI</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #2496ED;">• Docker</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: rgb(252, 122, 0)">• AWS ECS</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="https://iscg7427rainbow.herokuapp.com/">
+                        <div class="card z-depth-0 card-end">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">04. </span>Activity Management Web
+                                    Application</span>
+                                <p class="card-detail">An online system for parents to manage children activities which
+                                    is developed by following the Scrum process and applying Agile practices.</p>
+                                <div class="used-languages">
+                                    <span style="color: #27C5B5;">• Agile</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-python">• Python</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-django">• Django</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-heroku">• Heroku</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #FF328C;">• YouTrack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <a href="https://wandanli.github.io/Pick-Your-Dream/">
+                        <div class="card z-depth-0 card-start">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">05. </span>Pick Your Dream Game
+                                    Website</span>
+                                <p class="card-detail">An online game for toddler to pick a dream occupation randomly by
+                                    clicking on the screen.</p>
+                                <div class="used-languages">
+                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-css">• CSS</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="https://wandanli.github.io/IWD_Mywebsite/project1/index.html">
+                        <div class="card z-depth-0 card-end">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">06. </span>Advertisements with
+                                    Animation</span>
+                                <p class="card-detail">Created/reproduced commercial advertisements with animation using
+                                    HTML and CSS.</p>
+                                <div class="used-languages">
+                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-css">• CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <a href="#">
+                        <div class="card z-depth-0 card-start">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">07. </span>Parcel Tracker Android
+                                    App</span>
+                                <p class="card-detail">An Android application that lets the receiver knows what time the
+                                    parcel will arrive.</p>
+                                <div class="used-languages">
+                                    <span style="color: #B0721A;">• Java</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #ED5748;">• Google Maps API</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #FFCB2E;">• Firebase</span>&nbsp;&nbsp;&nbsp
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="https://www.youtube.com/watch?v=ex4vHPKU3Hg&t=7s">
+                        <div class="card z-depth-0 card-end">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">08. </span>Driver Licence Test
+                                    Booking Android App</span>
+                                <p class="card-detail">A driver's licence booking application that user can book a
+                                    timeslot and query day/week/user booking data.</p>
+                                <div class="used-languages">
+                                    <span style="color: #B0721A;">• Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <a href="https://www.youtube.com/watch?v=ZBNfL9eIrT8&t=19s">
+                        <div class="card z-depth-0 card-start">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">09. </span>Mini Location Android
+                                    App</span>
+                                <p class="card-detail">An Android app that gets the user current location and returns
+                                    the nearby restaurants.</p>
+                                <div class="used-languages">
+                                    <span style="color: #B0721A;">• Java</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #ED5748;">• Google Maps API</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: #CB202C;">• Zomato API</span>&nbsp;&nbsp;&nbsp
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="https://wandanli.github.io/UniCity-Web-Application-UI/">
+                        <div class="card z-depth-0 card-end">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">10. </span>UniCity Web Application
+                                    UI</span>
+                                <p class="card-detail">A photo and content sharing social networking web application
+                                    that user can post their difficult situation and get help
+                                    from others.</p>
+                                <div class="used-languages">
+                                    <span style="color: #FF26BE;">• Adobe XD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Work Experience-->
+    <div>
+        <div>
+            <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+        </div>
+        <div id="experience" class="experience-box scrollspy">
+            <div class="container center-align" style="margin-bottom: 40px;">
+                <h4>Work Experience</h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <ul class="collapsible expandable z-depth-3">
+                            <li>
+                                <div class="collapsible-header">
+                                    <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                        onclick="displayEduDetail()">...</a>
+                                    <i class="material-icons">apartment</i>
+                                    Unipharm Healthy Manufacturing Co.Ltd.
+                                </div>
+                                <div class="collapsible-second-title">
+                                    Package staff to Package Team Leader<br>
+                                    05/2017 – 01/2019
+                                </div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        • Quickly mastered the operation procedures of various manufacturing machines
+                                        and became familiar with production
+                                        processes, so as to complete the work well with the team<br><br>
+                                        • Assisted packaging manager to optimise packaging process and arrange
+                                        production schedule<br><br>
+                                        • Strictly controlled the quality of the pharmaceutical capsules as the head of
+                                        the sorting department, actively
+                                        coordinated with QA team should problems arose, and found solutions
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                        onclick="displayEduDetail()">...</a>
+                                    <i class="material-icons">storefront</i>
+                                    Te Atatu Fruit and Vegetable Shop
+                                </div>
+                                <div class="collapsible-second-title">
+                                    Shop Assistant<br>
+                                    12/2015 – 12/2016
+                                </div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        • Be responsible for processing cash and card payments at the register, gained
+                                        first-hand experience in running a small
+                                        retail store and EFTPOS payment industry
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                        onclick="displayEduDetail()">...</a>
+                                    <i class="material-icons">corporate_fare</i>
+                                    Kingdee International Software Group Limited
+                                </div>
+                                <div class="collapsible-second-title">
+                                    Business Data Analyst to Management Accounting Partner<br>
+                                    07/2011 – 04/2015
+                                </div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <span style="font-weight: bolder;">
+                                            Kingdee is a Hong Kong Stock Exchange listed company, a leading ERP software
+                                            and
+                                            cloud solution provider in the
+                                            Asia-Pacific region. With over 8900 employees and annual revenue of 730
+                                            million
+                                            NZD<br><br>
+                                        </span>
+                                        • As a project manager, developed a new business data analysis tool based on
+                                        business intelligence software – Spotfire,
+                                        which gives a comprehensive view of key business information of the company.
+                                        With the help of this tool, it greatly
+                                        accelerated data acquiring for the management to make business decisions<br><br>
+                                        • Designed a business data analysis application by using Kingdee cloud home to
+                                        provide easy access to KPI data across
+                                        different departments<br><br>
+                                        • Provided financial and operational insight data to facilitate CEO and chairman
+                                        of the board’s decision making<br><br>
+                                        <span style="color: #3A9EFF;">
+                                            AWARD: Annual Outstanding Employee of Kingdee Financial Department of 2013
+                                        </span>
+
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-css3-100.png" alt="">
-                    </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-bootstrap-100.png" alt="">
-                    </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-git-100.png" alt="">
-                    </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-javascript-100.png" alt="">
-                    </div>
-                    <div class="col s2 offset-s1 l1">
-                        <img src="/icons-skill-set/icons8-django-100.png" alt="">
-                    </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-python-100.png" alt="">
-                    </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-adobe-photoshop-100.png" alt="">
-                    </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-adobe-xd-100.png" alt="">
-                    </div>
-                    <div class="col s2 l1">
-                        <img src="/icons-skill-set/icons8-android-os-100.png" alt="">
+                    <div class="col s12 m4">
+                        <img src="/svg/undraw_freelancer_b0my.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -285,163 +868,8 @@
             <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
         </div>
     </div>
-    <!--Interest-->
-    <div>
-        <div class="container center-align" style="margin-top: 80px;">
-            <h4>Interest</h4>
-            <p>Still-life Photography</p>
-        </div>
-        <div class="carousel">
-            <img class="carousel-item" src="photo/figure-photo.jpg">
-            <img class="carousel-item" src="photo/siyue.jpg">
-            <img class="carousel-item" src="photo/sanriyue.jpg">
-            <img class="carousel-item" src="photo/miku.jpg">
-            <img class="carousel-item" src="photo/nidemingzi.jpg">
-        </div>
-        <div class="container center-align"
-            style="display: flex; align-items: center;justify-content: center; padding: 32px 0px;">
-            <a class="waves-effect waves-light btn z-depth-0"
-                style="display: flex; justify-content: center; align-items: center; background-color: #3A9EFF; border-radius: 6px;">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 226 226"
-                    style=" fill:#000000;">
-                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                        style="mix-blend-mode: normal">
-                        <path d="M0,226v-226h226v226z" fill="none"></path>
-                        <g fill="#ffffff">
-                            <path
-                                d="M65.59976,0c-36.1274,0 -65.59976,29.47236 -65.59976,65.59976v94.80048c0,36.1274 29.47236,65.59976 65.59976,65.59976h94.80048c36.1274,0 65.59976,-29.47236 65.59976,-65.59976v-94.80048c0,-36.1274 -29.47236,-65.59976 -65.59976,-65.59976zM65.59976,17.38462h94.80048c26.72206,0 48.21514,21.45913 48.21514,48.21514v94.80048c0,26.72206 -21.45913,48.21514 -48.21514,48.21514h-94.80048c-26.72206,0 -48.21514,-21.45913 -48.21514,-48.21514v-94.80048c0,-26.72206 21.45913,-48.21514 48.21514,-48.21514zM178.19231,34.76923c-7.19832,0 -13.03846,5.84014 -13.03846,13.03846c0,7.19832 5.84014,13.03846 13.03846,13.03846c7.19832,0 13.03846,-5.84014 13.03846,-13.03846c0,-7.19832 -5.84014,-13.03846 -13.03846,-13.03846zM113,52.15385c-33.51292,0 -60.84615,27.33323 -60.84615,60.84615c0,33.51292 27.33323,60.84615 60.84615,60.84615c33.51292,0 60.84615,-27.33323 60.84615,-60.84615c0,-33.51292 -27.33323,-60.84615 -60.84615,-60.84615zM113,69.53846c24.10758,0 43.46154,19.35397 43.46154,43.46154c0,24.10758 -19.35396,43.46154 -43.46154,43.46154c-24.10757,0 -43.46154,-19.35396 -43.46154,-43.46154c0,-24.10757 19.35397,-43.46154 43.46154,-43.46154z">
-                            </path>
-                        </g>
-                    </g>
-                </svg>
-                <span style="padding-left: 10px;">My Instagram >>></span>
-            </a>
-        </div>
-    </div>
-
-    <!--Education-->
-    <div>
-        <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
-    </div>
-    <div class="education-box">
-        <div class="container center-align" style="margin-bottom: 40px;">
-            <h4>Education</h4>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m4">
-                    <img src="/svg/undraw_studying_s3l7.png" alt="" style="width: 130%; display: block;">
-                </div>
-                <div class="col s12 m8">
-                    <ul class="collection with-header z-depth-3">
-
-                        <li class="collection-header">
-                            <div class="row" style="position: relative; margin-bottom: 10px;">
-                                <div class="col s12 m8">
-                                    <h5>Unitec Institute of Technology</h5>
-                                    <h6>Diploma in Computing</h6>
-                                </div>
-                                <div class="col s12 m4">
-                                    <p>07/2019 - 06/2020</p>
-                                </div>
-
-                                <a id="edu-detail-btn"
-                                    class="waves-effect waves-light btn-small z-depth-0 blue darken-2"
-                                    onclick="displayEduDetail()">...</a>
-
-                            </div>
-                        </li>
-                        <div id="edu-detail" style="display: none;">
-                            <li class="collection-item">
-                                <div>• Internet and Website Development (HTML/CSS/JavaScript/JQuery)
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A+"></span></a>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <div>• Web Application Development (Django/Heroku/REST/React/Docker)
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A++"></span></a>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <div>• Cloud Application Design & Development (AWS)
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A"></span></a>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <div>• Mobile Software Development (Android/Java)
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A++"></span></a>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <div>• GUI Programming (C#/Windows Form)
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A"></span></a>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <div>• Information Systems & Analysis
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A"></span></a>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <div>• Testing/Quality Assurance ICT
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A+"></span></a>
-                                </div>
-                            </li>
-                            <li class="collection-item">
-                                <div>• Agile & Lean Software Delivery (YouTrack)
-                                    <a class="secondary-content"><span class="new badge blue lighten-1"
-                                            data-badge-caption="A"></span></a>
-                                </div>
-                            </li>
-                        </div>
-                        <li class="collection-header" style="background-color: #f8f8f8;">
-                            <div class="row" style="position: relative; margin-bottom: 10px;">
-                                <div class="col s12 m8">
-                                    <h5>Sun Yat-sen University</h5>
-                                    <h6>Master of Economics, Majored in Western Economy</h6>
-                                </div>
-                                <di class="col s12 m4">
-                                    <p>09/2009 – 07/2011</p>
-                                </di class="col s12 m4" v>
-                            </div>
-                        </li>
-                        <li class="collection-header" style="background-color: #f8f8f8;">
-                            <div class="row" style="position: relative; margin-bottom: 10px;">
-                                <div class="col s12 m8">
-                                    <h5>Huazhong University of Science and Technology</h5>
-                                    <h6>Bachelor of Economics, Majored in Statistics</h6>
-                                </div>
-                                <di class="col s12 m4">
-                                    <p>09/2005 – 07/2009</p>
-                                </di class="col s12 m4" v>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div style="font-size: 0px;">
-        <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
-    </div>
-
-
     <!--Contact Me-->
-    <div>
-        <div>
-            <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
-        </div>
+    <div id="contact" class="scrollspy">
         <div class="contact" style="padding-bottom: 40px;">
             <div class="container center-align">
                 <h4>Contact Me</h4>
@@ -450,7 +878,7 @@
             <div class="container">
                 <div class="row" style="padding-top: 24px; margin-bottom: 0;">
                     <div class="col s10 offset-s1 m5 offset-m1">
-                        <ul class="collection card-panel z-depth-0"
+                        <ul class="collection card-panel z-depth-2"
                             style="border: none; border-radius: 8px; align-items: center;">
                             <li class="collection-item avatar" style="margin-left: 8%; padding-right: 0px;">
                                 <i class="material-icons circle blue lighten-1">email</i>
@@ -460,7 +888,7 @@
                         </ul>
                     </div>
                     <div class="col s10 offset-s1 m5">
-                        <ul class="collection card-panel z-depth-0"
+                        <ul class="collection card-panel z-depth-2"
                             style="border: none; border-radius: 8px; align-items: center;">
                             <li class="collection-item avatar" style="margin-left: 8%; padding-right: 0px;">
                                 <i class="material-icons circle blue lighten-1">phone_iphone</i>
@@ -481,8 +909,8 @@
     <!--Footer-->
     <footer style="background-color: #EfEfEf">
 
-        <div class="footer-copyright">
-            <div class="container" style="border-top: 1px solid #dbdada; padding: 30px 0; color: #b6b6b6;">
+        <div class="footer-copyright" style="border-top: 1px solid #dbdada;">
+            <div class="container" style="padding: 30px 0; color: #b6b6b6;">
                 <a style="color: #b6b6b6;">© 2020 Designed by Wandan Li (Danica)</a>
                 <a style="color: #b6b6b6; float: right;" href="https://materializecss.com/">Used Framework:
                     Materialize</a>
@@ -490,6 +918,7 @@
         </div>
 
     </footer>
+
 
 
 
@@ -528,6 +957,13 @@
                 document.getElementById("edu-detail").style.display = "none"
             }
         }
+        // Collapsible
+        document.addEventListener('DOMContentLoaded', function () {
+            var elem = document.querySelector('.collapsible.expandable');
+            var instance = M.Collapsible.init(elem, {
+                accordion: false
+            });
+        });
         // QR Code
         function displayQRCode() {
             if (document.getElementById("qrCode").style.display == "none") {
@@ -537,6 +973,11 @@
                 document.getElementById("qrCode").style.display = "none"
             }
         }
+        // scrollspy
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems);
+        });
 
 
     </script>
