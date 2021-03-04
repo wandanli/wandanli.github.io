@@ -21,6 +21,7 @@
         html,
         body {
             font-family: 'Assistant';
+            overflow-x: hidden;
         }
 
         h2,
@@ -91,12 +92,19 @@
             padding-top: 10px;
         }
 
+        /* .skill-set-container img {
+            display: inline-block;
+            width: 20px;
+            height: auto;
+        } */
+
         .contact {
             padding-top: 60px;
         }
 
         .skill img {
-            width: 100%;
+            width: 60px;
+            height: auto;
         }
 
         .carousel-item {
@@ -169,7 +177,7 @@
 
         .used-languages {
             padding-top: 10px;
-            height: 30px;
+            height: 50px;
         }
 
         .used-javascript {
@@ -280,6 +288,10 @@
         }
 
         @media screen and (max-width: 600px) {
+     .skill img {
+            width: 40px;
+        }
+
             .education-box img {
                 width: 80% !important;
                 margin: 0 auto;
@@ -350,32 +362,14 @@
                     </div>
                     <div class="col s12 l9 pull-l3">
                         <p>
-                            Recently graduated with a Graduate Diploma in Computing from Unitec.
+                            I have graduated with a Graduate Diploma in Computing from Unitec.
                         </p>
                         <p>
-                            Eager to learn
-                            continuously in the technology field
-                            striving for creating intuitive design and easy to use applications.
+                            I am eager to learn continuously in the technology field striving to create intuitive design and easy to use applications.
                         </p>
                         <p>
-                            My ability to learn and strong desire to be the best led me to accomplish an overall A grade
-                            of more than 10 assignment
-                            projects within a single year, and awarded job promotions twice in previous work experience.
+                            My ability to learn and strong desire to be the best led me to accomplish an overall A grade of more than 10 assignment projects within a single year and was awarded job promotions twice in previous work experience.
                         </p>
-                        <!-- <p>
-                            I like the challenges and fulfilment of programming.
-                        </p>
-                        <p>
-                            I can’t wait to continue exploring and extending my knowledge in this field.
-                        </p>
-                        <p>
-                            I am now looking for a junior full stack developer position.
-                        </p>
-                        <p>
-                            I believe that my dependability, attention to detail and growth mindset can bring value to
-                            your
-                            organisation.
-                        </p> -->
                         <a class="btn-small waves-effect waves-light z-depth-0"
                             style="background-color: #3A9EFF;margin-top: 20px; border-radius: 6px;" href="#projects">My
                             Projects >>></a>
@@ -396,36 +390,20 @@
                     <div>
                         <h4>Skill Set</h4>
                     </div>
-                    <div class="row" style="margin-bottom: 0px;">
-                        <div class="col s2 offset-s1 l1 offset-l1">
-                            <img src="/icons-skill-set/icons8-html-5-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-css3-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-bootstrap-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-git-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-javascript-100.png" alt="">
-                        </div>
-                        <div class="col s2 offset-s1 l1">
-                            <img src="/icons-skill-set/icons8-django-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-python-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-adobe-photoshop-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-adobe-xd-100.png" alt="">
-                        </div>
-                        <div class="col s2 l1">
-                            <img src="/icons-skill-set/icons8-android-os-100.png" alt="">
+                    <div class="row skill-set-container" style="margin-bottom: 0px;display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                        <img src="/icons-skill-set/icons8-html-5-100.png" alt="">
+                        <img src="/icons-skill-set/icons8-css3-100.png" alt="">
+                        <img src="https://img.icons8.com/color/100/000000/sass.png"/>
+                        <img src="/icons-skill-set/icons8-bootstrap-100.png" alt="">
+                        <img src="/icons-skill-set/icons8-git-100.png" alt="">
+                        <img src="https://img.icons8.com/office/100/000000/react.png"/>
+                        <img src="/icons-skill-set/icons8-javascript-100.png" alt="">
+                        <img src="/icons-skill-set/icons8-django-100.png" alt="">
+                        <img src="/icons-skill-set/icons8-python-100.png" alt="">
+                        <img src="https://img.icons8.com/color/96/000000/heroku.png"/>
+                        <img src="/icons-skill-set/icons8-adobe-photoshop-100.png" alt="">
+                        <img src="/icons-skill-set/icons8-adobe-xd-100.png" alt="">
+                        <img src="/icons-skill-set/icons8-android-os-100.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -622,26 +600,25 @@
     <!--Projects-->
     <div id="projects" class="scrollspy" style="padding-bottom: 40px;">
         <div class="container center-align" style="margin-top: 40px;">
-            <h4>Assignment Projects</h4>
-            <p>07/2019 - 06/2020</p>
+            <h4>Projects</h4>
+            <!-- <p>07/2019 - 06/2020</p> -->
         </div>
         <div class="container projects">
             <div class="row">
                 <div class="col s12 m6">
-                    <a href="https://wandanli.github.io/Hoa-Hari-Restaurant-Reservation/index.html" target="_blank">
+                    <a href="https://plantme.io" target="_blank">
                         <div class="card z-depth-0 card-start">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">01. </span>Restaurant
-                                    Reservation Website</span>
-                                <p class="card-detail">An online booking system for restaurants, in which user can make
-                                    reservations for a
-                                    particular table by selecting in the
-                                    restaurant layout, and order meals in advance.</p>
+                                <span class="card-title"><span class="project-number">01. </span>Plant Me (Team Project)</span>
+                                <p class="card-detail">A peer to peer plant marketplace Django based web application. Developing the Planting Tool module from design to front-end to back-end.</p>
                                 <div class="used-languages">
-                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-css">• CSS</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: rgb(194, 72, 16);">• OpenWeather API</span>
+                                    <span class="used-python">• Python</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-django">• Django</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-heroku">• Heroku</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp;
+                                    <span style="color: #ED5748;">• Google Maps API</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-css">• CSS</span>
                                 </div>
 
                             </div>
@@ -649,10 +626,48 @@
                     </a>
                 </div>
                 <div class="col s12 m6">
-                    <a href="http://www.danica-web.studio/" target="_blank">
+                    <a href="https://shortly-app.danicali.me" target="_blank">
                         <div class="card z-depth-0 card-end">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">02. </span>Childcare Centre
+                                <span class="card-title"><span class="project-number">02. </span>URL Shorten React App</span>
+                                <p class="card-detail">Responsive landing page solution for one of intermediate challenges in frontendmentor.io, where user can shorten an URL</p>
+                                <div class="used-languages">
+                                    <span style="color: #61DBFB;">• React</span>&nbsp;&nbsp;&nbsp;
+                                    <span style="color: #21263F;">• shrtcode API</span>&nbsp;&nbsp;&nbsp;
+                                    <span style="color: #C66493;">• Sass </span>&nbsp;&nbsp;&nbsp;
+                                    <span style="color: #FFCB2E;">• Firebase</span>&nbsp;&nbsp;&nbsp;
+                                    <span style="color: #0188D1;">• window.localStorage</span>&nbsp;&nbsp;&nbsp;
+                                     <span style="color: #8DC63F;">• Domain name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <a href="http://danicali.me/insure-landing-page" target="_blank">
+                        <div class="card z-depth-0 card-start">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">03. </span>Insure Landing Page</span>
+                                <p class="card-detail">Responsive landing page solution for one of junior challenges in frontendmentor.io.</p>
+                                <div class="used-languages">
+                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp;
+                                    <span style="color: #C66493;">• Sass </span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-css">• CSS</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="used-css">• 3D animations</span>&nbsp;&nbsp;&nbsp;
+                                    <span style="color: #243890">• Mobile First</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="https://danicawebapp.herokuapp.com/" target="_blank">
+                        <div class="card z-depth-0 card-end">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">04. </span>Childcare Centre
                                     Management Web Application</span>
                                 <p class="card-detail">An online platform for teachers to manage child enrolment and log
                                     child daily
@@ -666,21 +681,18 @@
                                     <span style="color: rgb(252, 122, 0);">• AWS S3</span>&nbsp;&nbsp;&nbsp
                                     <span style="color: #E1567C;">• Sentry</span>&nbsp;&nbsp;&nbsp
                                     <span style="color: #F48121;">• Cloudflare</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #8DC63F;">• Domain name</span>
-
                                 </div>
-
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 m6">
-                    <a href="https://danicawebapp-docker.herokuapp.com/react/kids/" target="_blank">
+                           <div class="col s12 m6">
+                    <a href="http://childcare-app.danicali.me/react/kids" target="_blank">
                         <div class="card z-depth-0 card-start">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">03. </span>Single-Page Application
+                                <span class="card-title"><span class="project-number">05. </span>Single-Page Application
                                     (SPA) Practice</span>
                                 <p class="card-detail">Used Django REST Framework to create an API backend, used React
                                     and Material-UI to create a frontend to perform CRUD operations.</p>
@@ -697,10 +709,34 @@
                     </a>
                 </div>
                 <div class="col s12 m6">
-                    <a href="https://iscg7427rainbow.herokuapp.com/" target="_blank">
-                        <div class="card z-depth-0 card-end">
+                    <a href="http://danicali.me/Hoa-Hari-Restaurant-Reservation/index.html" target="_blank">
+                        <div class="card z-depth-0">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">04. </span>Activity Management Web
+                                <span class="card-title"><span class="project-number">06. </span>Restaurant
+                                    Reservation Website</span>
+                                <p class="card-detail">An online booking system for restaurants, in which user can make
+                                    reservations for a
+                                    particular table by selecting in the
+                                    restaurant layout, and order meals in advance.</p>
+                                <div class="used-languages">
+                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
+                                    <span class="used-css">• CSS</span>&nbsp;&nbsp;&nbsp
+                                    <span style="color: rgb(194, 72, 16);">• OpenWeather API</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+     
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                     <a href="https://activity-app.danicali.me" target="_blank">
+                        <div class="card z-depth-0 card-start">
+                            <div class="card-content">
+                                <span class="card-title"><span class="project-number">07. </span>Activity Management Web
                                     Application</span>
                                 <p class="card-detail">An online system for parents to manage children activities which
                                     is developed by following the Scrum process and applying Agile practices.</p>
@@ -715,34 +751,14 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col s12 m6">
-                    <a href="https://wandanli.github.io/Pick-Your-Dream/" target="_blank">
-                        <div class="card z-depth-0 card-start">
+                   <a href="https://wandanli.github.io/Pick-Your-Dream/" target="_blank">
+                        <div class="card z-depth-0 card-end">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">05. </span>Pick Your Dream Game
+                                <span class="card-title"><span class="project-number">08. </span>Pick Your Dream Game
                                     Website</span>
                                 <p class="card-detail">An online game for toddler to pick a dream occupation randomly by
                                     clicking on the screen.</p>
-                                <div class="used-languages">
-                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-css">• CSS</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s12 m6">
-                    <a href="https://wandanli.github.io/IWD_Mywebsite/project1/index.html" target="_blank">
-                        <div class="card z-depth-0 card-end">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">06. </span>Advertisements with
-                                    Animation</span>
-                                <p class="card-detail">Created/reproduced commercial advertisements with animation using
-                                    HTML and CSS.</p>
                                 <div class="used-languages">
                                     <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
                                     <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
@@ -758,7 +774,7 @@
                     <a href="https://wandanli.github.io/Parcel-Tracker-Android-App-Screen-Shot/" target="_blank">
                         <div class="card z-depth-0 card-start">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">07. </span>Parcel Tracker Android
+                                <span class="card-title"><span class="project-number">09. </span>Parcel Tracker Android
                                     App</span>
                                 <p class="card-detail">An Android application that allows the receiver to track parcels
                                     and know the expected delivery time frame.</p>
@@ -776,7 +792,7 @@
                     <a href="https://www.youtube.com/watch?v=ex4vHPKU3Hg&t=7s" target="_blank">
                         <div class="card z-depth-0 card-end">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">08. </span>Driver Licence Test
+                                <span class="card-title"><span class="project-number">10. </span>Driver Licence Test
                                     Booking Android App</span>
                                 <p class="card-detail">A driver's licence booking application that user can book a
                                     timeslot and query day/week/user booking data.</p>
@@ -793,7 +809,7 @@
                     <a href="https://www.youtube.com/watch?v=ZBNfL9eIrT8&t=19s" target="_blank">
                         <div class="card z-depth-0 card-start">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">09. </span>Mini Location Android
+                                <span class="card-title"><span class="project-number">11. </span>Mini Location Android
                                     App</span>
                                 <p class="card-detail">An Android app that gets the user current location and returns
                                     the nearby restaurants.</p>
@@ -811,7 +827,7 @@
                     <a href="https://wandanli.github.io/UniCity-Web-Application-UI/" target="_blank">
                         <div class="card z-depth-0 card-end">
                             <div class="card-content">
-                                <span class="card-title"><span class="project-number">10. </span>UniCity Web Application
+                                <span class="card-title"><span class="project-number">12. </span>UniCity Web Application
                                     UI</span>
                                 <p class="card-detail">A photo and content sharing social networking web application
                                     that user can post their difficult situation and get help
@@ -849,18 +865,16 @@
                                 </div>
                                 <div class="collapsible-second-title">
                                     <span>Auckland</span><br>
-                                    <span>Web Application Developer - Internship</span><br>
+                                    <span>Web Application Developer - Part Time</span><br>
                                     06/2020 – Present
                                 </div>
                                 <div class="collapsible-body">
                                     <span>
-                                        • Gained first-hand experience on developing a product based on real life
-                                        business requirements and communication with
-                                        all stake holders within the organisation<br><br>
-                                        • Increased team transparency by incorporating Continuous Integration
-                                        development practice<br><br>
-                                        • Improved user experience by integrating Google Maps API for address form
-                                        auto-completion
+                                        •	Real-life business requirements based product, including regular communications with stakeholders and teammates<br><br>
+                                        •	Developing the Planting Tool module from design to front-end to back-end<br><br>
+                                        •	Cleansed spider-scrawled raw data to make it database ready, and designed database schema to meet business requirements for Planting Tool module<br><br>
+                                        •	Increased team transparency by incorporating Continuous Integration development practice<br><br>
+                                        •	Improved user experience by integrating Google Maps API for address form auto-completion
                                     </span>
                                 </div>
                             </li>
@@ -971,41 +985,33 @@
             <div class="container">
                 <div class="row" style="padding-top: 24px; margin-bottom: 0;">
                     <div class="col s10 offset-s1 l6 offset-l3">
-                        <ul class="collection card-panel z-depth-2"
+                        <div class="card-panel z-depth-2"
                             style="border: none; border-radius: 8px; align-items: center;">
-                            <li class="collection-item avatar" style="margin-left: 8%; padding-right: 0px;">
-                                <i class="material-icons circle blue lighten-1">email</i>
-                                <p>Email</p>
-                                <h6 style="word-break: break-all;">liwandan#gmail.com</h6>
-                            </li>
-                        </ul>
+                            <p align="center">
+                                <a href="mailto:liwandan@gmail.com" target="blank"><img src="https://img.icons8.com/bubbles/64/000000/email.png"/></a>
+                                <a href="https://www.linkedin.com/in/danica-li-072020/" target="blank"><img src="https://img.icons8.com/bubbles/64/000000/linkedin.png"/></a>
+                                <a href="https://github.com/wandanli" target="blank"><img src="https://img.icons8.com/bubbles/64/000000/github.png"/></a>
+                                <a href="https://www.instagram.com/futottakuma/" target="blank"><img src="https://img.icons8.com/bubbles/64/000000/instagram-new.png"/></a>
+                            </p>
+<!-- <a href="https://icons8.com/icon/118553/github">icon by Icons8</a> -->
+                        </div>
                     </div>
-                    <!-- <div class="col s10 offset-s1 m5">
-                        <ul class="collection card-panel z-depth-2"
-                            style="border: none; border-radius: 8px; align-items: center;">
-                            <li class="collection-item avatar" style="margin-left: 8%; padding-right: 0px;">
-                                <i class="material-icons circle blue lighten-1">phone_iphone</i>
-                                <p>Phone</p>
-                                <h6 style="word-break: break-all;">027-387-9130&emsp;&emsp;&emsp;&nbsp;&nbsp</h6>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
         </div>
     </div>
     <!--QR Code-->
-    <div class="floating">
+    <div class="floating" style="position: fixed; bottom: 10px;">
         <img id="qrCode" style="display: none;" src="/photo/qrcode.png" alt="">
         <a class="btn-small waves-effect waves-light deep-purple lighten-1" onclick="displayQRCode()"
-            style="border-radius: 30px;">Scan</a>
+            style="border-radius: 30px;">Mobile</a>
     </div>
     <!--Footer-->
     <footer style="background-color: #EfEfEf">
 
         <div class="footer-copyright" style="border-top: 1px solid #dbdada;">
             <div class="container" style="padding: 30px 0; color: #b6b6b6;">
-                <a style="color: #b6b6b6;">© 2020 Designed by Wandan Li (Danica)</a>
+                <a style="color: #b6b6b6;">© 2020 Designed by Danica</a>
                 <a style="color: #b6b6b6; float: right;" href="https://materializecss.com/">Used Framework:
                     Materialize</a>
             </div>
