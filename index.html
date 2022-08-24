@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBGMFX588M"></script>
     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-          gtag('config', 'G-YBGMFX588M');
+        gtag('config', 'G-YBGMFX588M');
     </script>
     <meta charset="UTF-8">
     <!--Let browser know website is optimized for mobile-->
@@ -23,7 +23,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="photo/favicon-96x96.png">
-   
+
     <title>Danica Li</title>
 
     <style>
@@ -102,7 +102,7 @@
         }
 
         .skill-set-container img {
-         margin:0 4px;
+            margin: 0 4px;
         }
 
         .contact {
@@ -121,10 +121,14 @@
 
         .education-box,
         .experience-box {
-            background-color: #efefef;
             padding-top: 10px;
             padding-bottom: 10px;
             margin-top: -1px;
+        }
+
+        .interest-box,
+        .education-box {
+            background-color: #efefef;
         }
 
         .collection-header p {
@@ -245,7 +249,7 @@
         }
 
         .experience-box img {
-            width: 40%;
+            width: 30%;
             position: absolute;
             bottom: 0px;
         }
@@ -270,11 +274,11 @@
             width: 108px;
         }
 
-        .social-link{
+        .social-link {
             margin: 10px;
         }
 
-        .social-link img{
+        .social-link img {
             width: 40px;
             height: 40px;
         }
@@ -297,10 +301,11 @@
                 float: none !important;
                 display: block;
             }
-             .social-link img{
-            width: 30px;
-            height: 30px;
-        }
+
+            .social-link img {
+                width: 30px;
+                height: 30px;
+            }
 
 
 
@@ -308,9 +313,9 @@
         }
 
         @media screen and (max-width: 600px) {
-     .skill img {
-            width: 40px;
-        }
+            .skill img {
+                width: 40px;
+            }
 
             .education-box img {
                 width: 80% !important;
@@ -343,89 +348,92 @@
         }
     </style>
 
-</head>
+    </head>
 
-<body>
-    <!--Navbar-->
-    <div class="navbar-fixed" style="height: 60px;">
-        <nav class="z-depth-0">
-            <div class="nav-wrapper container">
-                <a href="/index.html" class="brand-logo">Danica Li</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!--Sidenav-->
-    <ul class="sidenav sidenav-close" id="mobile-demo">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <!--About-->
-    <div id="about" class="scrollspy">
-        <!--Personal Statement-->
-        <div class="container">
-            <div class="row">
-                <div class="flexbox-personal-statement">
-                    <div class="col s12 l3 push-l9">
-                        <h2 style="margin-top: 0;">Hello,</h2>
-                        <h2>I am Danica</h2>
-                    </div>
-                    <div class="col s12 l9 pull-l3">
-                        <p>
-                            I have graduated with a Graduate Diploma in Computing from Unitec.
-                        </p>
-                        <p>
-                            Attracted by the creativity and usefulness of programming, I started my programming journey and laid a good foundation of technical skills by completing a tertiary qualification degree. 
-                        </p>
-                        <p>
-                            I am keen to start a new career as a developer and learn continuously in the technology field to create excel applications. 
-                        </p>
-                        <p>I am confident that the problem-solving skill and analytical ability I gained from previous working experience will help me get up to speed in this role very quickly.</p>
-                        <a class="btn-small waves-effect waves-light z-depth-0"
-                            style="background-color: #3A9EFF;margin-top: 20px; border-radius: 6px;" href="#projects">My
-                            Projects >>></a>
+    <body>
+        <!--Navbar-->
+        <div class="navbar-fixed" style="height: 60px;">
+            <nav class="z-depth-0">
+                <div class="nav-wrapper container">
+                    <a href="/index.html" class="brand-logo">Danica Li</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--Sidenav-->
+        <ul class="sidenav sidenav-close" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!--About-->
+        <div id="about" class="scrollspy">
+            <!--Personal Statement-->
+            <div class="container">
+                <div class="row">
+                    <div class="flexbox-personal-statement">
+                        <div class="col s12 l3 push-l9">
+                            <h2 style="margin-top: 0;">Hello,</h2>
+                            <h2>I am Danica</h2>
+                        </div>
+                        <div class="col s12 l9 pull-l3">
+                            <p>
+                                I am keen to develop my career in the IT field so that I can continuously extend my
+                                technology knowledge and learn from other talented people who have the same pursuits.
+                            </p>
+                            <p>
+                                I enjoy programming as I fount it is creative, useful and it provides concrete results.
+                            </p>
+                            <p>I am confident that the problem-solving skill and quick learning ability I gained from
+                                previous working experience will help me get up to speed very quickly.</p>
+                            <a class="btn-small waves-effect waves-light z-depth-0"
+                                style="background-color: #3A9EFF;margin-top: 20px; border-radius: 6px;" href="#projects">My
+                                Projects >>></a>
+                        </div>
                     </div>
                 </div>
+                <div>
+                    <img src="/svg/undraw_remotely_2j6y.svg" alt="" style="width: 90%;">
+                </div>
             </div>
+            <!--Skill Set-->
             <div>
-                <img src="/svg/undraw_remotely_2j6y.svg" alt="" style="width: 90%;">
-            </div>
-        </div>
-        <!--Skill Set-->
-        <div>
-            <div>
-                <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
-            </div>
-            <div class="skill">
-                <div class="container center-align">
-                    <div>
-                        <h4>Skill Set</h4>
-                    </div>
-                    <div class="row skill-set-container" style="margin-bottom: 0px;display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-                        <img src="/icons-skill-set/icons8-html-5-100.png" alt="html">
-                        <img src="/icons-skill-set/icons8-css3-100.png" alt="css">
-                        <img src="/icons-skill-set/icons8-javascript-100.png" alt="javascript">
-                        <img src="https://img.icons8.com/office/100/000000/react.png"/ alt="react">
-                        <img src="/icons-skill-set/styled-components.svg" alt="styled-components">
-                        <img src="https://img.icons8.com/color/100/000000/sass.png"/ alt="sass">
-                        <img src="/icons-skill-set/icons8-bootstrap-100.png" alt="bootstrap">
-                        <img src="/icons-skill-set/icons8-django-100.png" alt="django">
-                        <img src="/icons-skill-set/icons8-python-100.png" alt="python">
-                        <img src="https://img.icons8.com/color/96/000000/heroku.png"/ alt="heroku">
-                        <img src="/icons-skill-set/icons8-git-100.png" alt="git">
-                        <img src="/icons-skill-set/icons8-adobe-photoshop-100.png" alt="ps">
-                        <img src="/icons-skill-set/icons8-adobe-xd-100.png" alt="xd">
-                        <img src="/icons-skill-set/icons8-android-os-100.png" alt="android">
+                <div>
+                    <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+                </div>
+                <div class="skill">
+                    <div class="container center-align">
+                        <div>
+                            <h4>Skill Set</h4>
+                        </div>
+                        <div class="row skill-set-container"
+                            style="margin-bottom: 0px;display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                            <img
+                                src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/100/000000/external-angular-a-typescript-based-open-source-web-application-framework-logo-shadow-tal-revivo.png" />
+                            <img src="https://img.icons8.com/color/100/000000/typescript.png" />
+                            <img src="/icons-skill-set/icons8-javascript-100.png" alt="javascript">
+                            <img src="/icons-skill-set/icons8-git-100.png" alt="git">
+                            <img src="/icons-skill-set/icons8-bootstrap-100.png" alt="bootstrap">
+                            <img src="https://img.icons8.com/color/100/000000/sass.png" / alt="sass">
+                            <img src="/icons-skill-set/icons8-html-5-100.png" alt="html">
+                            <img src="/icons-skill-set/icons8-css3-100.png" alt="css">
+                            <img src="https://img.icons8.com/office/100/000000/react.png" / alt="react">
+                            <img src="/icons-skill-set/styled-components.svg" alt="styled-components">
+                            <img src="/icons-skill-set/icons8-django-100.png" alt="django">
+                            <img src="/icons-skill-set/icons8-python-100.png" alt="python">
+                            <img src="https://img.icons8.com/color/96/000000/heroku.png" / alt="heroku">
+                            <img src="/icons-skill-set/icons8-adobe-photoshop-100.png" alt="ps">
                         </div>
                     </div>
                 </div>
@@ -434,680 +442,554 @@
                 <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
             </div>
         </div>
+
+        <!--Work Experience-->
+        <div id="experience" class="scrollspy">
+            <div class="experience-box">
+                <div class="container center-align" style="margin-bottom: 40px;">
+                    <h4>Work Experience</h4>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m8">
+                            <ul class="collapsible expandable z-depth-3">
+                                <li class="active">
+                                    <div class="collapsible-header">
+                                        <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                            onclick="displayEduDetail()">...</a>
+                                        <i class="material-icons">work</i>
+                                        Quality Product Research Ltd.
+                                    </div>
+                                    <div class="collapsible-second-title">
+                                        <span>Auckland</span><br>
+                                        <span>Front End Developer</span><br>
+                                        09/2021 – Current
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            • An Angular application for professional advisers to compare insurance products
+                                            <a href="https://quotemonster.co.nz/home"
+                                                target='_blank'>(quotemonster)</a><br><br>
+                                            • Upgraded the entire front end application, translating UI/UX design into
+                                            reality using front end technology (Bootstrap, Sass, Angular animation) in a
+                                            responsive web design manner, which resulted in enhancement of user
+                                            experience<br><br>
+                                            • Undertook rigorous testing on the upgraded application and resolved issues
+                                            found alongside, ensured launching new product version in a timely manner and
+                                            gained positive feedbacks from users<br><br>
+                                            • Designed and developed new features that integrated backend API based on a
+                                            comprehensive understanding of business requirements<br><br>
+                                            • Implemented user guiding tour by using third party library shepherd.js that
+                                            guides user through the application
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                            onclick="displayEduDetail()">...</a>
+                                        <i class="material-icons">grass</i>
+                                        Greenback
+                                    </div>
+                                    <div class="collapsible-second-title">
+                                        <span>Auckland</span><br>
+                                        <span>Web Application Developer - Contract</span><br>
+                                        06/2020 – 08/2021
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            • Real-life business requirements based product, including regular
+                                            communications with stakeholders and teammates<br><br>
+                                            • Developed the Planting Tool module from design to front-end to
+                                            back-end<br><br>
+                                            • Cleansed spider-scrawled raw data to make it database ready, and designed
+                                            database schema to meet business requirements for Planting Tool module<br><br>
+                                            • Increased team transparency by incorporating Continuous Integration
+                                            development practice<br><br>
+                                            • Improved user experience by integrating Google Maps API for address form
+                                            auto-completion
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                            onclick="displayEduDetail()">...</a>
+                                        <i class="material-icons">apartment</i>
+                                        Unipharm Healthy Manufacturing Co.Ltd.
+                                    </div>
+                                    <div class="collapsible-second-title">
+                                        <span>Auckland</span><br>
+                                        <span>Package staff</span>&nbsp;&nbsp;<span>>>></span>&nbsp;&nbsp;<span>Package Team
+                                            Leader</span><br>
+                                        05/2017 – 01/2019
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            • Got up to speed within 2 weeks on the operation procedures of various
+                                            manufacturing machines and production processes,
+                                            through actively learning from co-workers<br><br>
+                                            • Assisted packaging manager to optimise packaging process and better arrange
+                                            production schedule that increased package
+                                            throughput capacity from 3 thousands to 10 thousands bottles per day<br><br>
+                                            • Solved pharmaceutical capsules storage problems as the head of sorting
+                                            department when there were unexpected changes
+                                            of production schedule or production environment
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                            onclick="displayEduDetail()">...</a>
+                                        <i class="material-icons">corporate_fare</i>
+                                        Kingdee International Software Group Limited
+                                    </div>
+                                    <div class="collapsible-second-title">
+                                        <span>Shenzhen, China</span><br>
+                                        <span>Business Data
+                                            Analyst</span>&nbsp;&nbsp;<span>>>></span>&nbsp;&nbsp;<span>Management
+                                            Accounting Partner</span><br>
+
+                                        07/2011 – 04/2015
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <span style="font-weight: bolder;">
+                                                Kingdee is a Hong Kong Stock Exchange listed company, a leading ERP software
+                                                and cloud solution provider in the
+                                                Asia-Pacific region, with over 8900 employees and annual revenue of 730
+                                                million NZD<br><br>
+                                            </span>
+                                            • Provided corporate operational analysis report and produced various insight
+                                            data using Excel/business intelligence
+                                            tool (QlikView) to facilitate CEO’s decision making, including altering a
+                                            branch, setting annual business goals/plans<br><br>
+                                            • Created a new business data analysis dashboard based on business intelligence
+                                            software – Spotfire, which gave
+                                            comprehensive view of key business information of the company. With the help of
+                                            this tool, it greatly accelerated data
+                                            acquiring for the management to make business decisions<br><br>
+                                            <span style="color: #3A9EFF;">
+                                                AWARD: Annual Outstanding Employee of Kingdee Financial Department of 2013
+                                            </span>
+
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 m4">
+                            <img src="/svg/undraw_freelancer_b0my.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Education-->
+        <div id="education" class="scrollspy">
+            <div>
+                <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
+            </div>
+            <div class="education-box">
+                <div class="container center-align" style="margin-bottom: 40px;">
+                    <h4>Education</h4>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <img src="/svg/undraw_studying_s3l7.png" alt="" style="width: 130%; display: block;">
+                        </div>
+                        <div class="col s12 m8">
+                            <ul class="collection with-header z-depth-3">
+
+                                <li class="collection-header">
+                                    <div class="row" style="position: relative; margin-bottom: 10px;">
+                                        <div class="col s12 m8">
+                                            <h5>Unitec Institute of Technology</h5>
+                                            <h6>Graduate Diploma in Computing</h6>
+                                        </div>
+                                        <div class="col s12 m4">
+                                            <p>07/2019 - 06/2020</p>
+                                        </div>
+
+                                        <a id="edu-detail-btn"
+                                            class="waves-effect waves-light btn-small z-depth-0 blue darken-2"
+                                            onclick="displayEduDetail()">...</a>
+
+                                    </div>
+                                </li>
+                                <div id="edu-detail" style="display: none;">
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • Internet and Website Development (HTML/CSS/JavaScript/JQuery)
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A+</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • Web Application Development (Django/Heroku/REST/React/Docker)
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A+</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • Mobile Software Development (Android/Java)
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A+</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • Testing/Quality Assurance ICT
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A+</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • GUI Programming (C#/Windows Form)
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • Information Systems & Analysis
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • Cloud Application Design & Development (AWS)
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A-</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row" style="margin-bottom: 0;">
+                                            <div class="col s10">
+                                                • Agile & Lean Software Delivery (YouTrack)
+                                            </div>
+                                            <div class="col s2">
+                                                <a class="secondary-content">A-</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <li class="collection-header" style="background-color: #f8f8f8;">
+                                    <div class="row" style="position: relative; margin-bottom: 10px;">
+                                        <div class="col s12 m8">
+                                            <h5>Sun Yat-sen University</h5>
+                                            <h6>Master of Economics, Majored in Western Economy</h6>
+                                        </div>
+                                        <div class="col s12 m4">
+                                            <p>09/2009 – 07/2011</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="collection-header" style="background-color: #f8f8f8;">
+                                    <div class="row" style="position: relative; margin-bottom: 10px;">
+                                        <div class="col s12 m8">
+                                            <h5>Huazhong University of Science and Technology</h5>
+                                            <h6>Bachelor of Economics, Majored in Statistics</h6>
+                                        </div>
+                                        <div class="col s12 m4">
+                                            <p>09/2005 – 07/2009</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div style="font-size: 0px;">
+                <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div id="projects" class="scrollspy" style="padding-bottom: 40px;">
+            <div class="container center-align" style="margin-top: 40px;">
+                <h4>Projects</h4>
+                <!-- <p>07/2019 - 06/2020</p> -->
+            </div>
+            <div class="container projects">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <a href="https://quotemonster.co.nz/home" target="_blank">
+                            <div class="card z-depth-0 card-start">
+                                <div class="card-content">
+                                    <span class="card-title"><span class="project-number">01. </span>Quotemonster (Team
+                                        Project)</span>
+                                    <p class="card-detail">An Angular application for professional advisers to compare
+                                        insurance products.</p>
+                                    <div class="used-languages">
+                                        <span style="color: #e24b3e;">• Angular</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #4f99ef;">• Typescript</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #e088bf;">• Sass</span>&nbsp;&nbsp;&nbsp;
+                                        <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp;
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s12 m6">
+                        <a href="https://plantme.io" target="_blank">
+                            <div class="card z-depth-0 card-end">
+                                <div class="card-content">
+                                    <span class="card-title"><span class="project-number">02. </span>Plant Me (Team
+                                        Project)</span>
+                                    <p class="card-detail">A peer to peer plant marketplace Django based web application.
+                                        Developing the Planting Tool module from design to front-end to back-end.</p>
+                                    <div class="used-languages">
+                                        <span class="used-python">• Python</span>&nbsp;&nbsp;&nbsp;
+                                        <span class="used-django">• Django</span>&nbsp;&nbsp;&nbsp;
+                                        <span class="used-heroku">• Heroku</span>&nbsp;&nbsp;&nbsp;
+                                        <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #ED5748;">• Google Maps API</span>&nbsp;&nbsp;&nbsp;
+                                        <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp;
+                                        <span class="used-css">• CSS</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <a href="https://recipe-b2fdb.web.app/" target="_blank">
+                            <div class="card z-depth-0 card-start">
+                                <div class="card-content">
+                                    <span class="card-title"><span class="project-number">03. </span>Recipe React App</span>
+                                    <p class="card-detail">A recipe search app using React and the EDAMAM (a global plants
+                                        API) to show the recipe. </p>
+                                    <div class="used-languages">
+                                        <span style="color: #61DBFB;">• React</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #42B913;">• EDAMAM API</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #DB7192;">• styled-components </span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #8DC63F;">• axios</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #c95e24;">• Infinite scroll</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #FFCB2E;">• Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s12 m6">
+                        <a href="https://url-shortening-7b3e3.web.app/" target="_blank">
+                            <div class="card z-depth-0 card-end">
+                                <div class="card-content">
+                                    <span class="card-title"><span class="project-number">04. </span>URL Shorten React
+                                        App</span>
+                                    <p class="card-detail">Responsive landing page solution for one of intermediate
+                                        challenges in frontendmentor.io, where user can shorten an URL</p>
+                                    <div class="used-languages">
+                                        <span style="color: #61DBFB;">• React</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #21263F;">• shrtcode API</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #C66493;">• Sass </span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #FFCB2E;">• Firebase</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #0188D1;">• window.localStorage</span>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: #8DC63F;">• Domain name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
         <!--Interest-->
         <div>
-            <div class="container center-align" style="margin-top: 40px;">
-                <h4>Interest</h4>
-                <p>Toy Photography</p>
+            <div>
+                <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
             </div>
-            <div class="carousel">
-                <img class="carousel-item" src="photo/figure-photo.jpg">
-                <img class="carousel-item" src="photo/siyue.jpg">
-                <img class="carousel-item" src="photo/sanriyue.jpg">
-                <img class="carousel-item" src="photo/miku.jpg">
-                <img class="carousel-item" src="photo/nidemingzi.jpg">
-            </div>
-            <div class="container center-align"
-                style="display: flex; align-items: center;justify-content: center; padding: 32px 0px;">
-                <a href="https://www.instagram.com/futottakuma/" class="waves-effect waves-light btn z-depth-0"
-                    style="display: flex; justify-content: center; align-items: center; background-color: #3A9EFF; border-radius: 6px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 226 226"
-                        style=" fill:#000000;">
-                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                            style="mix-blend-mode: normal">
-                            <path d="M0,226v-226h226v226z" fill="none"></path>
-                            <g fill="#ffffff">
-                                <path
-                                    d="M65.59976,0c-36.1274,0 -65.59976,29.47236 -65.59976,65.59976v94.80048c0,36.1274 29.47236,65.59976 65.59976,65.59976h94.80048c36.1274,0 65.59976,-29.47236 65.59976,-65.59976v-94.80048c0,-36.1274 -29.47236,-65.59976 -65.59976,-65.59976zM65.59976,17.38462h94.80048c26.72206,0 48.21514,21.45913 48.21514,48.21514v94.80048c0,26.72206 -21.45913,48.21514 -48.21514,48.21514h-94.80048c-26.72206,0 -48.21514,-21.45913 -48.21514,-48.21514v-94.80048c0,-26.72206 21.45913,-48.21514 48.21514,-48.21514zM178.19231,34.76923c-7.19832,0 -13.03846,5.84014 -13.03846,13.03846c0,7.19832 5.84014,13.03846 13.03846,13.03846c7.19832,0 13.03846,-5.84014 13.03846,-13.03846c0,-7.19832 -5.84014,-13.03846 -13.03846,-13.03846zM113,52.15385c-33.51292,0 -60.84615,27.33323 -60.84615,60.84615c0,33.51292 27.33323,60.84615 60.84615,60.84615c33.51292,0 60.84615,-27.33323 60.84615,-60.84615c0,-33.51292 -27.33323,-60.84615 -60.84615,-60.84615zM113,69.53846c24.10758,0 43.46154,19.35397 43.46154,43.46154c0,24.10758 -19.35396,43.46154 -43.46154,43.46154c-24.10757,0 -43.46154,-19.35396 -43.46154,-43.46154c0,-24.10757 19.35397,-43.46154 43.46154,-43.46154z">
-                                </path>
+            <div class='interest-box'>
+                <div class="container center-align">
+                    <h4 style='margin-top: 0;'>Interest</h4>
+                    <p>Toy Photography</p>
+                </div>
+                <div class="carousel">
+                    <img class="carousel-item" src="photo/figure-photo.jpg">
+                    <img class="carousel-item" src="photo/siyue.jpg">
+                    <img class="carousel-item" src="photo/sanriyue.jpg">
+                    <img class="carousel-item" src="photo/miku.jpg">
+                    <img class="carousel-item" src="photo/nidemingzi.jpg">
+                </div>
+                <div class="container center-align"
+                    style="display: flex; align-items: center;justify-content: center; padding: 32px 0px;">
+                    <a href="https://www.instagram.com/futottakuma/" target='_blank'
+                        class="waves-effect waves-light btn z-depth-0"
+                        style="display: flex; justify-content: center; align-items: center; background-color: #3A9EFF; border-radius: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 226 226"
+                            style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M65.59976,0c-36.1274,0 -65.59976,29.47236 -65.59976,65.59976v94.80048c0,36.1274 29.47236,65.59976 65.59976,65.59976h94.80048c36.1274,0 65.59976,-29.47236 65.59976,-65.59976v-94.80048c0,-36.1274 -29.47236,-65.59976 -65.59976,-65.59976zM65.59976,17.38462h94.80048c26.72206,0 48.21514,21.45913 48.21514,48.21514v94.80048c0,26.72206 -21.45913,48.21514 -48.21514,48.21514h-94.80048c-26.72206,0 -48.21514,-21.45913 -48.21514,-48.21514v-94.80048c0,-26.72206 21.45913,-48.21514 48.21514,-48.21514zM178.19231,34.76923c-7.19832,0 -13.03846,5.84014 -13.03846,13.03846c0,7.19832 5.84014,13.03846 13.03846,13.03846c7.19832,0 13.03846,-5.84014 13.03846,-13.03846c0,-7.19832 -5.84014,-13.03846 -13.03846,-13.03846zM113,52.15385c-33.51292,0 -60.84615,27.33323 -60.84615,60.84615c0,33.51292 27.33323,60.84615 60.84615,60.84615c33.51292,0 60.84615,-27.33323 60.84615,-60.84615c0,-33.51292 -27.33323,-60.84615 -60.84615,-60.84615zM113,69.53846c24.10758,0 43.46154,19.35397 43.46154,43.46154c0,24.10758 -19.35396,43.46154 -43.46154,43.46154c-24.10757,0 -43.46154,-19.35396 -43.46154,-43.46154c0,-24.10757 19.35397,-43.46154 43.46154,-43.46154z">
+                                    </path>
+                                </g>
                             </g>
-                        </g>
-                    </svg>
-                    <span style="padding-left: 10px;">My Instagram >>></span>
-                </a>
+                        </svg>
+                        <span style="padding-left: 10px;">My Instagram >>></span>
+                    </a>
+                </div>
+            </div>
+            <div style="font-size: 0px;">
+                <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
             </div>
         </div>
-    </div>
-    <!--Education-->
-    <div id="education" class="scrollspy">
-        <div>
-            <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
-        </div>
-        <div class="education-box">
-            <div class="container center-align" style="margin-bottom: 40px;">
-                <h4>Education</h4>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m4">
-                        <img src="/svg/undraw_studying_s3l7.png" alt="" style="width: 130%; display: block;">
-                    </div>
-                    <div class="col s12 m8">
-                        <ul class="collection with-header z-depth-3">
 
-                            <li class="collection-header">
-                                <div class="row" style="position: relative; margin-bottom: 10px;">
-                                    <div class="col s12 m8">
-                                        <h5>Unitec Institute of Technology</h5>
-                                        <h6>Graduate Diploma in Computing</h6>
-                                    </div>
-                                    <div class="col s12 m4">
-                                        <p>07/2019 - 06/2020</p>
-                                    </div>
-
-                                    <a id="edu-detail-btn"
-                                        class="waves-effect waves-light btn-small z-depth-0 blue darken-2"
-                                        onclick="displayEduDetail()">...</a>
-
-                                </div>
-                            </li>
-                            <div id="edu-detail" style="display: initial;">
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • Internet and Website Development (HTML/CSS/JavaScript/JQuery)
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A+</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • Web Application Development (Django/Heroku/REST/React/Docker)
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A+</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • Mobile Software Development (Android/Java)
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A+</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • Testing/Quality Assurance ICT
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A+</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • GUI Programming (C#/Windows Form)
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A</a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • Information Systems & Analysis
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • Cloud Application Design & Development (AWS)
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A-</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="row" style="margin-bottom: 0;">
-                                        <div class="col s10">
-                                            • Agile & Lean Software Delivery (YouTrack)
-                                        </div>
-                                        <div class="col s2">
-                                            <a class="secondary-content">A-</a>
-                                        </div>
-                                    </div>
-                                </li>
+        <!--Contact Me-->
+        <div id="contact" class="scrollspy">
+            <div class="contact" style="padding-bottom: 40px;">
+                <div class="container center-align">
+                    <h4>Contact Me</h4>
+                    <p>I sincerely look forward to your contact.</p>
+                </div>
+                <div class="container">
+                    <div class="row" style="padding-top: 24px; margin-bottom: 0;">
+                        <div class="col s10 offset-s1 l6 offset-l3">
+                            <div class="card-panel z-depth-2"
+                                style="border: none; border-radius: 8px; align-items: center;">
+                                <p align="center">
+                                    <a class="social-link" href="mailto:liwandan@gmail.com" target="blank"><img width="50"
+                                            height="50" src="svg/gmail.svg" /></a>
+                                    <a class="social-link" href="https://www.linkedin.com/in/danica-li-072020/"
+                                        target="blank"><img width="50" height="50" src="svg/linkedin.svg" /></a>
+                                    <a class="social-link" href="https://github.com/wandanli" target="blank"><img width="50"
+                                            height="50" src="svg/github.svg" /></a>
+                                    <a class="social-link" href="https://www.instagram.com/futottakuma/" target="blank"><img
+                                            width="50" height="50" src="svg/instagram.svg" /></a>
+                                </p>
+                                <!-- <a href="https://icons8.com/icon/118553/github">icon by Icons8</a> -->
                             </div>
-                            <li class="collection-header" style="background-color: #f8f8f8;">
-                                <div class="row" style="position: relative; margin-bottom: 10px;">
-                                    <div class="col s12 m8">
-                                        <h5>Sun Yat-sen University</h5>
-                                        <h6>Master of Economics, Majored in Western Economy</h6>
-                                    </div>
-                                    <div class="col s12 m4">
-                                        <p>09/2009 – 07/2011</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="collection-header" style="background-color: #f8f8f8;">
-                                <div class="row" style="position: relative; margin-bottom: 10px;">
-                                    <div class="col s12 m8">
-                                        <h5>Huazhong University of Science and Technology</h5>
-                                        <h6>Bachelor of Economics, Majored in Statistics</h6>
-                                    </div>
-                                    <div class="col s12 m4">
-                                        <p>09/2005 – 07/2009</p>
-                                    </div>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div style="font-size: 0px;">
-            <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
-        </div>
-    </div>
-    <!--Projects-->
-    <div id="projects" class="scrollspy" style="padding-bottom: 40px;">
-        <div class="container center-align" style="margin-top: 40px;">
-            <h4>Projects</h4>
-            <!-- <p>07/2019 - 06/2020</p> -->
-        </div>
-        <div class="container projects">
-            <div class="row">
-                <div class="col s12 m6">
-                    <a href="https://plantme.io" target="_blank">
-                        <div class="card z-depth-0 card-start">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">01. </span>Plant Me (Team Project)</span>
-                                <p class="card-detail">A peer to peer plant marketplace Django based web application. Developing the Planting Tool module from design to front-end to back-end.</p>
-                                <div class="used-languages">
-                                    <span class="used-python">• Python</span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-django">• Django</span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-heroku">• Heroku</span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #ED5748;">• Google Maps API</span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-css">• CSS</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s12 m6">
-                    <a href="https://recipe-b2fdb.web.app/" target="_blank">
-                        <div class="card z-depth-0 card-end">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">02. </span>Recipe React App</span>
-                                <p class="card-detail">A recipe search app using React and the EDAMAM (a global plants API) to show the recipe. </p>
-                                <div class="used-languages">
-                                    <span style="color: #61DBFB;">• React</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #42B913;">• EDAMAM API</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #DB7192;">• styled-components </span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #8DC63F;">• axios</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #c95e24;">• Infinite scroll</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #FFCB2E;">• Firebase</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                    <a href="https://url-shortening-7b3e3.web.app/" target="_blank">
-                        <div class="card z-depth-0 card-start">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">03. </span>URL Shorten React App</span>
-                                <p class="card-detail">Responsive landing page solution for one of intermediate challenges in frontendmentor.io, where user can shorten an URL</p>
-                                <div class="used-languages">
-                                    <span style="color: #61DBFB;">• React</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #21263F;">• shrtcode API</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #C66493;">• Sass </span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #FFCB2E;">• Firebase</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #0188D1;">• window.localStorage</span>&nbsp;&nbsp;&nbsp;
-                                     <span style="color: #8DC63F;">• Domain name</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s12 m6">
-               <a href="https://wandanli.github.io/insure-landing-page/" target="_blank">
-                        <div class="card z-depth-0 card-end">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">04. </span>Insure Landing Page</span>
-                                <p class="card-detail">Responsive landing page solution for one of junior challenges in frontendmentor.io.</p>
-                                <div class="used-languages">
-                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #C66493;">• Sass </span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-css">• CSS</span>&nbsp;&nbsp;&nbsp;
-                                    <span class="used-css">• 3D animations</span>&nbsp;&nbsp;&nbsp;
-                                    <span style="color: #243890">• Mobile First</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                           <div class="col s12 m6">
-                         <a href="https://danicawebapp.herokuapp.com/" target="_blank">
-                        <div class="card z-depth-0 card-start">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">05. </span>Childcare Centre
-                                    Management Web Application</span>
-                                <p class="card-detail">An online platform for teachers to manage child enrolment and log
-                                    child daily
-                                    activities, as well as for parents to edit
-                                    and view child journals.</p>
-                                <div class="used-languages">
-                                    <span class="used-python">• Python</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-django">• Django</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #7043A5;">• Bootstrap</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-heroku">• Heroku</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: rgb(252, 122, 0);">• AWS S3</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #E1567C;">• Sentry</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #F48121;">• Cloudflare</span>&nbsp;&nbsp;&nbsp
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s12 m6">
-                    <a href="https://danicawebapp-api.herokuapp.com/react/kids/" target="_blank">
-                        <div class="card z-depth-0 card-end">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">06. </span>Single-Page Application
-                                    (SPA) Practice</span>
-                                <p class="card-detail">Used Django REST Framework to create an API backend, used React
-                                    and Material-UI to create a frontend to perform CRUD operations.</p>
-                                <div class="used-languages">
-                                    <span style="color: #A30000;">• Django REST Framework</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #61DBFB;">• React</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #1A76D2;">• Material-UI</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #2496ED;">• Docker</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: rgb(252, 122, 0)">• AWS ECS</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-     
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                       <a href="https://wandanli.github.io/Hoa-Hari-Restaurant-Reservation/index.html" target="_blank">
-                        <div class="card z-depth-0 card-start">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">07. </span>Restaurant
-                                    Reservation Website</span>
-                                <p class="card-detail">An online booking system for restaurants, in which user can make
-                                    reservations for a
-                                    particular table by selecting in the
-                                    restaurant layout, and order meals in advance.</p>
-                                <div class="used-languages">
-                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-css">• CSS</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: rgb(194, 72, 16);">• OpenWeather API</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s12 m6">
-                    <a href="https://iscg7427rainbow.herokuapp.com/" target="_blank">
-                        <div class="card z-depth-0 card-end">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">08. </span>Activity Management Web
-                                    Application</span>
-                                <p class="card-detail">An online system for parents to manage children activities which
-                                    is developed by following the Scrum process and applying Agile practices.</p>
-                                <div class="used-languages">
-                                    <span style="color: #27C5B5;">• Agile</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-python">• Python</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-django">• Django</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-heroku">• Heroku</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #FF328C;">• YouTrack</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                        <a href="https://wandanli.github.io/Pick-Your-Dream/" target="_blank">
-                        <div class="card z-depth-0 card-start">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">09. </span>Pick Your Dream Game
-                                    Website</span>
-                                <p class="card-detail">An online game for toddler to pick a dream occupation randomly by
-                                    clicking on the screen.</p>
-                                <div class="used-languages">
-                                    <span class="used-javascript">• JavaScript</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-html">• HTML</span>&nbsp;&nbsp;&nbsp
-                                    <span class="used-css">• CSS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s12 m6">
-                    <a href="https://wandanli.github.io/Parcel-Tracker-Android-App-Screen-Shot/" target="_blank">
-                        <div class="card z-depth-0 card-end">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">10. </span>Parcel Tracker Android
-                                    App</span>
-                                <p class="card-detail">An Android application that allows the receiver to track parcels
-                                    and know the expected delivery time frame.</p>
-                                <div class="used-languages">
-                                    <span style="color: #B0721A;">• Java</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #ED5748;">• Google Maps API</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #FFCB2E;">• Firebase</span>&nbsp;&nbsp;&nbsp
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                    <a href="https://www.youtube.com/watch?v=ZBNfL9eIrT8&t=19s" target="_blank">
-                        <div class="card z-depth-0 card-start">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">11. </span>Mini Location Android
-                                    App</span>
-                                <p class="card-detail">An Android app that gets the user current location and returns
-                                    the nearby restaurants.</p>
-                                <div class="used-languages">
-                                    <span style="color: #B0721A;">• Java</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #ED5748;">• Google Maps API</span>&nbsp;&nbsp;&nbsp
-                                    <span style="color: #CB202C;">• Zomato API</span>&nbsp;&nbsp;&nbsp
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s12 m6">
-                    <a href="https://wandanli.github.io/UniCity-Web-Application-UI/" target="_blank">
-                        <div class="card z-depth-0 card-end">
-                            <div class="card-content">
-                                <span class="card-title"><span class="project-number">12. </span>UniCity Web Application
-                                    UI</span>
-                                <p class="card-detail">A photo and content sharing social networking web application
-                                    that user can post their difficult situation and get help
-                                    from others.</p>
-                                <div class="used-languages">
-                                    <span style="color: #FF26BE;">• Adobe XD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--Work Experience-->
-    <div id="experience" class="scrollspy">
-        <div>
-            <img src="/svg/path-top.svg" alt="" style="width: 100%; display: block;">
-        </div>
-        <div class="experience-box">
-            <div class="container center-align" style="margin-bottom: 40px;">
-                <h4>Work Experience</h4>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m8">
-                        <ul class="collapsible expandable z-depth-3">
-                            <li>
-                                <div class="collapsible-header">
-                                    <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
-                                        onclick="displayEduDetail()">...</a>
-                                    <i class="material-icons">grass</i>
-                                    Greenback
-                                </div>
-                                <div class="collapsible-second-title">
-                                    <span>Auckland</span><br>
-                                    <span>Web Application Developer - Part Time</span><br>
-                                    06/2020 – 02/2021
-                                </div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        •	Real-life business requirements based product, including regular communications with stakeholders and teammates<br><br>
-                                        •	Developed the Planting Tool module from design to front-end to back-end<br><br>
-                                        •	Cleansed spider-scrawled raw data to make it database ready, and designed database schema to meet business requirements for Planting Tool module<br><br>
-                                        •	Increased team transparency by incorporating Continuous Integration development practice<br><br>
-                                        •	Improved user experience by integrating Google Maps API for address form auto-completion
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">
-                                    <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
-                                        onclick="displayEduDetail()">...</a>
-                                    <i class="material-icons">apartment</i>
-                                    Unipharm Healthy Manufacturing Co.Ltd.
-                                </div>
-                                <div class="collapsible-second-title">
-                                    <span>Auckland</span><br>
-                                    <span>Package staff</span>&nbsp;&nbsp;<span>>>></span>&nbsp;&nbsp;<span>Package Team
-                                        Leader</span><br>
-                                    05/2017 – 01/2019
-                                </div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        • Got up to speed within 2 weeks on the operation procedures of various
-                                        manufacturing machines and production processes,
-                                        through actively learning from co-workers<br><br>
-                                        • Assisted packaging manager to optimise packaging process and better arrange
-                                        production schedule that increased package
-                                        throughput capacity from 3 thousands to 10 thousands bottles per day<br><br>
-                                        • Solved pharmaceutical capsules storage problems as the head of sorting
-                                        department when there were unexpected changes
-                                        of production schedule or production environment
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- <li>
-                                <div class="collapsible-header">
-                                    <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
-                                        onclick="displayEduDetail()">...</a>
-                                    <i class="material-icons">storefront</i>
-                                    Te Atatu Fruit and Vegetable Shop
-                                </div>
-                                <div class="collapsible-second-title">
-                                    Shop Assistant<br>
-                                    12/2015 – 12/2016
-                                </div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        • Be responsible for processing cash and card payments at the register, gaining
-                                        first-hand experience in running a small
-                                        retail store and EFTPOS payment industry
-                                    </span>
-                                </div>
-                            </li> -->
-                            <li>
-                                <div class="collapsible-header">
-                                    <a class="exp-detail-btn waves-effect waves-light btn-small z-depth-0 blue darken-2"
-                                        onclick="displayEduDetail()">...</a>
-                                    <i class="material-icons">corporate_fare</i>
-                                    Kingdee International Software Group Limited
-                                </div>
-                                <div class="collapsible-second-title">
-                                    <span>Shenzhen, China</span><br>
-                                    <span>Business Data
-                                        Analyst</span>&nbsp;&nbsp;<span>>>></span>&nbsp;&nbsp;<span>Management
-                                        Accounting Partner</span><br>
-
-                                    07/2011 – 04/2015
-                                </div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <span style="font-weight: bolder;">
-                                            Kingdee is a Hong Kong Stock Exchange listed company, a leading ERP software
-                                            and cloud solution provider in the
-                                            Asia-Pacific region, with over 8900 employees and annual revenue of 730
-                                            million NZD<br><br>
-                                        </span>
-                                        • Provided corporate operational analysis report and produced various insight
-                                        data using Excel/business intelligence
-                                        tool (QlikView) to facilitate CEO’s decision making, including altering a
-                                        branch, setting annual business goals/plans<br><br>
-                                        • Created a new business data analysis dashboard based on business intelligence
-                                        software – Spotfire, which gave
-                                        comprehensive view of key business information of the company. With the help of
-                                        this tool, it greatly accelerated data
-                                        acquiring for the management to make business decisions<br><br>
-                                        <span style="color: #3A9EFF;">
-                                            AWARD: Annual Outstanding Employee of Kingdee Financial Department of 2013
-                                        </span>
-
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s12 m4">
-                        <img src="/svg/undraw_freelancer_b0my.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="font-size: 0px;">
-            <img src="/svg/path-bottom.svg" alt="" style="width: 100%; display: block;">
-        </div>
-    </div>
-    <!--Contact Me-->
-    <div id="contact" class="scrollspy">
-        <div class="contact" style="padding-bottom: 40px;">
-            <div class="container center-align">
-                <h4>Contact Me</h4>
-                <p>I sincerely look forward to your contact.</p>
-            </div>
-            <div class="container">
-                <div class="row" style="padding-top: 24px; margin-bottom: 0;">
-                    <div class="col s10 offset-s1 l6 offset-l3">
-                        <div class="card-panel z-depth-2"
-                            style="border: none; border-radius: 8px; align-items: center;">
-                            <p align="center">
-                                <a class="social-link" href="mailto:liwandan@gmail.com" target="blank"><img width="50" height="50" src="svg/gmail.svg"/></a>
-                                <a class="social-link"href="https://www.linkedin.com/in/danica-li-072020/" target="blank"><img width="50" height="50" src="svg/linkedin.svg"/></a>
-                                <a class="social-link"href="https://github.com/wandanli" target="blank"><img width="50" height="50" src="svg/github.svg"/></a>
-                                <a class="social-link"href="https://www.instagram.com/futottakuma/" target="blank"><img width="50" height="50" src="svg/instagram.svg"/></a>
-                            </p>
-<!-- <a href="https://icons8.com/icon/118553/github">icon by Icons8</a> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--QR Code-->
-    <div class="floating" style="position: fixed; bottom: 10px;">
-        <img id="qrCode" style="display: none;" src="/photo/qrcode.png" alt="">
-        <a class="btn-small waves-effect waves-light deep-purple lighten-1" onclick="displayQRCode()"
-            style="border-radius: 30px;">Mobile</a>
-    </div>
-    <!--Footer-->
-    <footer style="background-color: #EfEfEf">
 
-        <div class="footer-copyright" style="border-top: 1px solid #dbdada;">
-            <div class="container" style="padding: 30px 0; color: #b6b6b6;">
-                <a style="color: #b6b6b6;">© 2020 Designed by Danica</a>
-                <a style="color: #b6b6b6; float: right;" href="https://materializecss.com/">Used Framework:
-                    Materialize</a>
-            </div>
+        <!--QR Code-->
+        <div class="floating" style="position: fixed; bottom: 10px;">
+            <img id="qrCode" style="display: none;" src="/photo/qrcode.png" alt="">
+            <a class="btn-small waves-effect waves-light deep-purple lighten-1" onclick="displayQRCode()"
+                style="border-radius: 30px;">Mobile</a>
         </div>
 
-    </footer>
+        <!--Footer-->
+        <footer style="background-color: #EfEfEf">
 
+            <div class="footer-copyright" style="border-top: 1px solid #dbdada;">
+                <div class="container" style="padding: 30px 0; color: #b6b6b6;">
+                    <a style="color: #b6b6b6;">© 2020 Designed by Danica</a>
+                    <a style="color: #b6b6b6; float: right;" href="https://materializecss.com/">Used Framework:
+                        Materialize</a>
+                </div>
+            </div>
 
+        </footer>
 
-
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        // Sidenav
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-        // Navbar shadow change
-        window.addEventListener('scroll', (e) => {
-            const nav = document.querySelector('nav');
-            if (window.pageYOffset > 0) {
-                nav.classList.remove("z-depth-0");
-            } else {
-                nav.classList.add("z-depth-0");
-            }
-        });
-        // Carousel
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            var options = {
-                dist: 0,
-            }
-            var instances = M.Carousel.init(elems);
-        });
-        // Education Detail
-        function displayEduDetail() {
-            if (document.getElementById("edu-detail").style.display == "none") {
-                document.getElementById("edu-detail").style.display = "initial"
-            }
-            else {
-                document.getElementById("edu-detail").style.display = "none"
-            }
-        }
-        // Collapsible
-        document.addEventListener('DOMContentLoaded', function () {
-            var elem = document.querySelector('.collapsible.expandable');
-            var instance = M.Collapsible.init(elem, {
-                accordion: false
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <script>
+            // Sidenav
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems);
             });
-        });
-        // QR Code
-        function displayQRCode() {
-            if (document.getElementById("qrCode").style.display == "none") {
-                document.getElementById("qrCode").style.display = "initial"
+            // Navbar shadow change
+            window.addEventListener('scroll', (e) => {
+                const nav = document.querySelector('nav');
+                if (window.pageYOffset > 0) {
+                    nav.classList.remove("z-depth-0");
+                } else {
+                    nav.classList.add("z-depth-0");
+                }
+            });
+            // Carousel
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.carousel');
+                var options = {
+                    dist: 0,
+                }
+                var instances = M.Carousel.init(elems);
+            });
+            // Education Detail
+            function displayEduDetail() {
+                if (document.getElementById("edu-detail").style.display == "none") {
+                    document.getElementById("edu-detail").style.display = "initial"
+                }
+                else {
+                    document.getElementById("edu-detail").style.display = "none"
+                }
             }
-            else {
-                document.getElementById("qrCode").style.display = "none"
+            // Collapsible
+            document.addEventListener('DOMContentLoaded', function () {
+                var elem = document.querySelector('.collapsible.expandable');
+                var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                });
+            });
+            // QR Code
+            function displayQRCode() {
+                if (document.getElementById("qrCode").style.display == "none") {
+                    document.getElementById("qrCode").style.display = "initial"
+                }
+                else {
+                    document.getElementById("qrCode").style.display = "none"
+                }
             }
-        }
-        // scrollspy
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.scrollspy');
-            var instances = M.ScrollSpy.init(elems);
-        });
+            // scrollspy
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.scrollspy');
+                var instances = M.ScrollSpy.init(elems);
+            });
 
 
-    </script>
-</body>
-
-
+        </script>
+    </body>
 
 </html>
